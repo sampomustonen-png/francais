@@ -465,7 +465,7 @@
     }
     meta.append(el("time", { datetime: item.published, text: ago(item.ts) }));
 
-    const lead = el("div", { class: "lead" }, wordify(item.title.normalize("NFC"), el("h2", { lang: "fr" })), thumb);
+    const lead = el("div", { class: "card-lead" }, wordify(item.title.normalize("NFC"), el("h2", { lang: "fr" })), thumb);
     const body = el("div", { class: "body" }, meta, lead);
     if (item.summary) body.append(wordify(item.summary.normalize("NFC"), el("p", { class: "sum", lang: "fr" })));
 
@@ -989,7 +989,7 @@
     const source = state.sources.find((s) => s.id === item.source);
     const link = safeUrl(item.link) || "";
     const host = hostOf(link);
-    if (link) bar.append(el("a", { class: "linkbtn", href: link, target: "_blank", rel: "noopener", text: "Original ↗" }));
+    if (link) bar.append(el("a", { class: "linkbtn", href: link, target: "_blank", rel: "noopener", text: "Original ↗︎" }));
 
     const article = el("article", { class: `reader-article cat-${item.category}`, "data-link": link, "data-src": source ? source.name : host });
     const meta = el("div", { class: "meta" }, el("span", { class: "src" }, el("i"), source ? source.name : host));
@@ -1004,7 +1004,7 @@
     }
     const body = el("div", { class: "rbody" });
     article.append(body);
-    if (link) article.append(el("a", { class: "src-link", href: link, target: "_blank", rel: "noopener", text: `Lire l'original sur ${host} ↗` }));
+    if (link) article.append(el("a", { class: "src-link", href: link, target: "_blank", rel: "noopener", text: `Lire l'original sur ${host} ↗︎` }));
     view.append(article);
 
     const showBlocks = (blocks) => {

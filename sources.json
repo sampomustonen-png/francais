@@ -36,13 +36,15 @@
     {
       "id": "france24-france",
       "name": "France 24, France",
-      "url": "https://www.france24.com/fr/rss",
+      "url": "https://www.france24.com/fr/france/rss",
       "category": "france",
-      "include_url": [
-        "/fr/france/"
-      ],
       "max_age_days": 5,
-      "_huom": "Tarkistettu. Sama syöte kuin yllä, vain Ranskan uutiset."
+      "_huom": "Tarkistettu 15.11. France 24:n oma Ranska-syöte (yleissyötteessä oli liian vähän Ranskan juttuja). Videot ja ohjelmat jätetään pois.",
+      "exclude_url": [
+        "/fr/sports/",
+        "/fr/vid%c3%a9o/",
+        "/fr/%c3%a9missions/"
+      ]
     },
     {
       "id": "franceinfo-france",
@@ -54,13 +56,14 @@
     {
       "id": "france24-culture",
       "name": "France 24, Culture",
-      "url": "https://www.france24.com/fr/rss",
+      "url": "https://www.france24.com/fr/culture/rss",
       "category": "culture",
-      "include_url": [
-        "/fr/culture/"
-      ],
       "max_age_days": 10,
-      "_huom": "Tarkistettu. Sama syöte, vain kulttuuri."
+      "_huom": "Tarkistettu 15.11. France 24:n oma kulttuurisyöte, mukana myös À l'Affiche -ohjelman tekstit. Videot jätetään pois.",
+      "exclude_url": [
+        "/fr/vid%c3%a9o/",
+        "/fr/%c3%a9missions/l%c3%a9gendes-urbaines/"
+      ]
     },
     {
       "id": "actualitte",

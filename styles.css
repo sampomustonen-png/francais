@@ -1169,8 +1169,8 @@ details[open] > summary.rowbtn .chev { transform: rotate(90deg); }
 /* ------------------------------------------------------------------ ranskan sovellus: oma ilme */
 
 /* Kortti: pieni kuva otsikon vieressä */
-.lead { display: flex; gap: 14px; align-items: flex-start; }
-.lead h2 { flex: 1; min-width: 0; }
+.card-lead { display: flex; gap: 14px; align-items: flex-start; }
+.card-lead h2 { flex: 1; min-width: 0; }
 .thumb {
   flex: none;
   width: 92px;
