@@ -1,0 +1,98 @@
+name: Mettre à jour le fil
+
+on:
+  # Noin kolmen tunnin välein (UTC). GitHub voi viivästää ajastettuja ajoja.
+  schedule:
+    - cron: "17 */3 * * *"
+  # Käsin käynnistys: Actions → Mettre à jour le fil → Run workflow
+  workflow_dispatch:
+  # Aina kun muutat tiedostoja (esim. sources.json)
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  construire-et-publier:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # Kuvien ja käännösten välimuisti säilyy ajojen välillä.
+      - name: Restaurer le cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: data-${{ github.run_id }}
+          restore-keys: data-
+
+      - name: Installer feedparser
+        run: pip install "feedparser>=6,<7"
+
+      - name: Lire les flux et construire le dictionnaire
+        run: python scripts/build_feed.py --sources sources.json --data data --out _site --cache .cache
+
+      - name: Trouver les mots absents du dictionnaire
+        run: node scripts/saknade_ord.js _site > .cache/saknade.txt
+
+      # Konekäännös (OPUS-MT). Jos tämä epäonnistuu, sivu toimii silti.
+      - name: Cache du modèle de traduction
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-opus-mt-fr-en-v1
+
+      - name: Installer le modèle de traduction
+        continue-on-error: true
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install "transformers>=4.40,<5" sentencepiece
+
+      - name: Traduire phrases et mots
+        continue-on-error: true
+        timeout-minutes: 25
+        run: python scripts/oversatt.py --site _site --cache .cache --missing .cache/saknade.txt
+
+      - name: Copier le site
+        run: |
+          cp index.html styles.css app.js ordbok.js manifest.webmanifest _site/
+          cp -r assets _site/
+          sed "s/__BUILD__/${GITHUB_RUN_ID}/" sw.js > _site/sw.js
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+      - name: Publier
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+  # GitHub poistaa ajastuksen käytöstä, jos repossa ei tapahdu mitään 60 päivään.
+  # Työnkulun "uudelleenkytkeminen" nollaa laskurin, joten päivitys ei pysähdy.
+  garder-actif:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Garder la planification active
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/mettre-a-jour.yml/enable"
