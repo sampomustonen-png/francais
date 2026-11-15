@@ -74,7 +74,7 @@ FILM_RE = re.compile(
 
 CUISINE_RE = re.compile(
     r"\b("
-    r"recettes?|cuisines?|cuisiner|cuisinière?s?|cuisinier|gastronomi\w*|restaurants?|bistrots?|"
+    r"recettes?(?!\s+(?:fiscales|publicitaires|générées|commerciales|totales|annuelles|budgétaires|record|d['’]exploitation|de\s+l['’]état|du\s+box-office))|cuisines?|cuisiner|cuisinière?s?|cuisinier|gastronomi\w*|restaurants?|bistrots?|"
     r"chefs? (?:cuisinier|étoilée?s?|pâtissiers?)|guide michelin|étoilée? michelin|"
     r"pâtisseries?|pâtissiers?|boulangeries?|boulangers?|fromages?|vins?|vignerons?|desserts?|"
     r"repas|ingrédients?|cuisson|gâteaux?|tartes?|soupes?|légumes?|apéritif|apéro|"
