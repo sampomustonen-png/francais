@@ -1,0 +1,145 @@
+{
+  "_ohje": "Lähteet. category: monde | france | culture | vie. enabled: false poistaa lähteen käytöstä. max_age_days: kuinka vanhoja juttuja näytetään (oletus 4). exclude_url: osoitteen osat, joita sisältävät jutut jätetään pois. include_url: vain nämä osoitteet otetaan mukaan. tags: merkinnät kaikille lähteen jutuille (livre, film, cuisine, voyage). require_tag: vain jutut, jotka saavat tämän merkinnän. no_summary: syötteen tiivistelmä ohitetaan. Osoitteiden vertailu tehdään pienillä kirjaimilla, joten é on muodossa %c3%a9.",
+  "sources": [
+    {
+      "id": "france24",
+      "name": "France 24",
+      "url": "https://www.france24.com/fr/rss",
+      "category": "monde",
+      "exclude_url": [
+        "/fr/sports/",
+        "/fr/vid%c3%a9o/",
+        "/fr/%c3%a9missions/",
+        "/fr/france/",
+        "/fr/culture/"
+      ],
+      "_huom": "Tarkistettu. Urheilu, videot ja ohjelmat jätetään pois; Ranskan ja kulttuurin jutut tulevat alla omina lähteinään samasta syötteestä."
+    },
+    {
+      "id": "franceinfo-monde",
+      "name": "franceinfo, Monde",
+      "url": "https://www.francetvinfo.fr/monde.rss",
+      "category": "monde",
+      "_huom": "Ei tarkistettu (sivusto ei auennut testiympäristössä). Jos valikossa lukee 'ne fonctionne pas', poista tai vaihda."
+    },
+    {
+      "id": "rfi",
+      "name": "RFI",
+      "url": "https://www.rfi.fr/fr/rss",
+      "category": "monde",
+      "exclude_url": [
+        "/fr/sports/",
+        "/fr/podcasts/"
+      ],
+      "_huom": "Ei tarkistettu. RFI:n kieli on selkeää ja sopii keskitasolle."
+    },
+    {
+      "id": "france24-france",
+      "name": "France 24, France",
+      "url": "https://www.france24.com/fr/rss",
+      "category": "france",
+      "include_url": [
+        "/fr/france/"
+      ],
+      "max_age_days": 5,
+      "_huom": "Tarkistettu. Sama syöte kuin yllä, vain Ranskan uutiset."
+    },
+    {
+      "id": "franceinfo-france",
+      "name": "franceinfo, France",
+      "url": "https://www.francetvinfo.fr/france.rss",
+      "category": "france",
+      "_huom": "Ei tarkistettu."
+    },
+    {
+      "id": "france24-culture",
+      "name": "France 24, Culture",
+      "url": "https://www.france24.com/fr/rss",
+      "category": "culture",
+      "include_url": [
+        "/fr/culture/"
+      ],
+      "max_age_days": 10,
+      "_huom": "Tarkistettu. Sama syöte, vain kulttuuri."
+    },
+    {
+      "id": "actualitte",
+      "name": "ActuaLitté",
+      "url": "https://actualitte.com/rss-main.rss",
+      "category": "culture",
+      "tags": [
+        "livre"
+      ],
+      "max_age_days": 5,
+      "_huom": "Tarkistettu. Kirjat ja kustannusala."
+    },
+    {
+      "id": "allocine",
+      "name": "AlloCiné",
+      "url": "https://www.allocine.fr/rss/news.xml",
+      "category": "culture",
+      "tags": [
+        "film"
+      ],
+      "max_age_days": 5,
+      "_huom": "Tarkistettu. Elokuvat ja sarjat."
+    },
+    {
+      "id": "franceinfo-culture",
+      "name": "franceinfo, Culture",
+      "url": "https://www.francetvinfo.fr/culture.rss",
+      "category": "culture",
+      "_huom": "Ei tarkistettu."
+    },
+    {
+      "id": "rfi-culture",
+      "name": "RFI, Culture",
+      "url": "https://www.rfi.fr/fr/culture/rss",
+      "category": "culture",
+      "max_age_days": 7,
+      "_huom": "Ei tarkistettu."
+    },
+    {
+      "id": "geo",
+      "name": "GEO",
+      "url": "https://feed.prismamediadigital.com/v1/geo/rss",
+      "category": "vie",
+      "max_age_days": 7,
+      "_huom": "Tarkistettu. Matkailu, luonto ja historia; matkajutut saavat voyage-merkinnän automaattisesti."
+    },
+    {
+      "id": "cuisine-actuelle",
+      "name": "Cuisine Actuelle",
+      "url": "https://feed.prismamediadigital.com/v1/cac/rss",
+      "category": "vie",
+      "tags": [
+        "cuisine"
+      ],
+      "max_age_days": 400,
+      "_huom": "Syöte toimii, mutta sen uusimmat jutut olivat marraskuussa 2026 helmikuulta, joten ikäraja on pitkä (reseptit eivät vanhene)."
+    }
+  ],
+  "_reddit_ohje": "Reddit sulki RSS-syötteet 13.11.2026, joten nämä ovat pelkkiä pikalinkkejä valikossa.",
+  "reddit": [
+    {
+      "name": "Mon Reddit",
+      "url": "https://www.reddit.com/",
+      "about": "Votre page d'accueil avec tout ce que vous suivez."
+    },
+    {
+      "name": "r/france",
+      "url": "https://www.reddit.com/r/france/",
+      "about": "Actualité et vie quotidienne en France, en français."
+    },
+    {
+      "name": "r/AskFrance",
+      "url": "https://www.reddit.com/r/AskFrance/",
+      "about": "Questions sur la France et les Français."
+    },
+    {
+      "name": "r/French",
+      "url": "https://www.reddit.com/r/French/",
+      "about": "Questions et réponses sur la langue française, pour les apprenants."
+    }
+  ]
+}

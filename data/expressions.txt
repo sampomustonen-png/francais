@@ -1,0 +1,170 @@
+# Expressions et locutions. La bulle les affiche quand le mot touché en fait partie.
+# Format :  expression|traduction, traduction = exemple; autre sens
+# Écrivez les verbes à l'infinitif (avoir besoin de, pas j'ai besoin de). « se » vaut aussi pour me, te, nous, vous, s'.
+# « … » remplace un à trois mots quelconques (ne … pas).
+ne … pas|not
+ne … plus|no longer, not any more
+ne … jamais|never
+ne … rien|nothing
+ne … personne|nobody
+ne … que|only
+ne … aucun|no, not any
+ne … guère|hardly
+il y a|there is, there are = il y a un problème; ago = il y a deux ans
+il faut|it is necessary, one must = il faut partir; you need = il faut du temps
+il s'agit de|it is about, it concerns = il s'agit d'un accord
+s'agir de|to be about, to concern = il s'agit de
+se rendre compte|to realise
+se rendre|to go = se rendre à Paris; to surrender
+avoir besoin de|to need
+avoir lieu|to take place
+avoir l'air|to look, to seem
+avoir envie de|to want, to feel like
+avoir peur|to be afraid
+avoir raison|to be right
+avoir tort|to be wrong
+avoir faim|to be hungry
+avoir du mal à|to have trouble doing
+avoir le droit de|to be allowed to
+faire partie de|to be part of, to belong to
+faire face à|to face, to deal with
+faire attention|to be careful, to pay attention
+faire appel à|to call on, to appeal to
+faire confiance à|to trust
+faire semblant|to pretend
+mettre en place|to set up, to put in place
+mettre en œuvre|to implement
+mettre fin à|to put an end to
+mettre en cause|to call into question, to implicate
+prendre en compte|to take into account
+prendre en charge|to take care of, to cover
+prendre part à|to take part in
+prendre la parole|to speak, to take the floor
+tenir compte de|to take into account
+tenir à|to be keen on, to care about
+se mettre à|to start doing
+se passer|to happen = qu'est-ce qui se passe ?; to do without = se passer de
+se trouver|to be (located); to find oneself
+se souvenir|to remember
+se sentir|to feel
+se demander|to wonder
+se faire|to get done = se faire opérer; to happen = ça se fait
+se tenir|to take place = le sommet se tient à Bruxelles; to behave
+s'en aller|to leave, to go away
+s'occuper de|to take care of, to deal with
+s'attendre à|to expect
+venir de|to have just done = il vient d'arriver; to come from
+vouloir dire|to mean
+être en train de|to be in the middle of doing = je suis en train de lire
+être sur le point de|to be about to
+être en mesure de|to be able to
+donner lieu à|to give rise to
+porter plainte|to file a complaint
+à cause de|because of
+grâce à|thanks to
+à partir de|from = à partir de lundi
+au lieu de|instead of
+au cours de|during, in the course of
+à la suite de|following, after
+suite à|following, after
+lors de|during, at the time of
+au sein de|within
+auprès de|with, to = auprès des jeunes; next to
+afin de|in order to
+afin que|so that
+pour que|so that
+bien que|although
+alors que|while, whereas
+tandis que|while, whereas
+parce que|because
+dès que|as soon as
+avant de|before (doing)
+après avoir|after (having done)
+jusqu'à|until; up to, as far as
+par rapport à|compared to, in relation to
+face à|facing, in the face of
+en face de|opposite
+à côté de|next to
+près de|near; nearly = près de 100 morts
+loin de|far from
+autour de|around
+au bout de|after = au bout de deux heures; at the end of
+quant à|as for
+en fait|in fact, actually
+en effet|indeed
+en tout cas|in any case
+en même temps|at the same time
+en ce moment|at the moment
+en revanche|on the other hand
+en outre|moreover
+en particulier|in particular
+en général|in general, generally
+en fin de compte|in the end
+en raison de|because of, due to
+en cas de|in case of
+en tant que|as = en tant que président
+en train de|in the middle of
+en dehors de|outside of, apart from
+à peine|barely, hardly
+à nouveau|again
+de nouveau|again
+tout à coup|suddenly
+tout à fait|absolutely, completely
+tout de suite|right away
+tout de même|all the same, still
+tout le monde|everybody
+d'abord|first, at first
+d'ailleurs|besides, moreover
+d'accord|OK, agreed = être d'accord = to agree
+du coup|so, as a result
+de plus en plus|more and more
+de moins en moins|less and less
+au moins|at least
+du moins|at least
+plus ou moins|more or less
+à peu près|about, roughly
+peu à peu|little by little
+la plupart|most = la plupart des gens
+un peu|a little
+beaucoup de|a lot of
+quelque chose|something
+quelqu'un|someone
+n'importe quoi|anything; nonsense
+n'importe qui|anyone
+c'est-à-dire|that is to say
+c'est pourquoi|that is why
+y compris|including
+par exemple|for example
+par contre|on the other hand
+par ailleurs|moreover, otherwise
+par conséquent|consequently
+pour autant|for all that, nevertheless
+à la fois|at the same time, both
+à l'heure actuelle|at present
+à l'étranger|abroad
+à l'égard de|towards, regarding
+mise en place|setting up, implementation
+prise de position|stance, stand
+chef d'État|head of state
+Premier ministre|Prime Minister
+mise en examen|indictment, formal charge
+garde à vue|police custody
+Union européenne|European Union
+États-Unis|United States
+Assemblée nationale|National Assembly (French parliament)
+cessez-le-feu|ceasefire
+il est question de|it is about
+il était une fois|once upon a time
+bon appétit|enjoy your meal
+à table|dinner is ready, to the table
+fait maison|homemade
+il vaut mieux|it is better to = il vaut mieux attendre
+à feu doux|over a low heat = cuire à feu doux
+à feu vif|over a high heat
+faire le tour de|to go round, to tour = faire le tour de l'île
+rendre hommage à|to pay tribute to
+mettre en scène|to stage, to direct (a play, film); to portray = mettre en scène une famille
+en fin de journée|at the end of the day, in the late afternoon
+au frais|in a cool place, in the fridge = laisser reposer au frais
+au bord de|on the edge of, by (the sea, a lake) = au bord de la mer
+se mettre à|to start (doing) = il se met à pleuvoir

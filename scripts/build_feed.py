@@ -1,0 +1,441 @@
+#!/usr/bin/env python3
+"""Hakee sources.json-tiedoston RSS-syötteet ja kirjoittaa sivun tiedostot:
+
+    feed.json    jutut, lähteiden tila ja Reddit-pikalinkit
+    ordbok.json  ranska–englanti-sanakirja selaimelle (data/-kansiosta + omat korjaukset)
+
+Käyttö:
+    python scripts/build_feed.py --sources sources.json --data data --out _site --cache .cache
+"""
+from __future__ import annotations
+
+import argparse
+import calendar
+import concurrent.futures as cf
+import hashlib
+import html
+import json
+import re
+import socket
+import sys
+import time
+import unicodedata
+import urllib.error
+import urllib.request
+from datetime import datetime, timezone
+from pathlib import Path
+
+import feedparser
+
+sys.path.insert(0, str(Path(__file__).parent))
+import ordbok_data  # noqa: E402
+
+USER_AGENT = "Mozilla/5.0 (compatible; lecture-francais/1.0; personal RSS reader)"
+CATEGORIES = {"monde", "france", "culture", "vie"}
+DEFAULT_MAX_AGE_DAYS = 4
+MAX_ITEMS_PER_SOURCE = 25
+MAX_ITEMS_TOTAL = 400
+SUMMARY_CHARS = 360
+IMAGE_FETCH_LIMIT = 120  # kuinka monen uuden jutun kuva haetaan yhdellä ajolla
+
+# Sama sanojen pilkkominen kuin selaimessa: l'homme → l' + homme, aujourd'hui pysyy yhtenä.
+WORD_RE = re.compile(
+    r"aujourd['’]hui|quelqu['’]une?s?|[^\W\d_]{1,7}['’](?=[^\W\d_])|[^\W\d_]+(?:-[^\W\d_]+)*",
+    re.IGNORECASE,
+)
+
+L = r"[^\W\d_]"  # kirjain
+
+BOOK_RE = re.compile(
+    r"\b("
+    r"livres?|roman|romans|romanci(?:er|ère)s?|écrivaine?s?|"
+    r"poètes?|poésies?|poèmes?|recueils? de (?:poèmes|nouvelles)|littératures?|littéraires?|"
+    r"bandes? dessinées?|bd|mangas?|polars?|biographies?|autobiographi\w*|"
+    r"éditeurs?|éditrices?|maisons? d['’]édition|libraires?|librairies?|"
+    r"goncourt|renaudot|prix femina|prix médicis|prix littéraires?|rentrée littéraire|"
+    r"salon du livre|festival du livre|prix nobel de littérature"
+    r")\b",
+    re.IGNORECASE,
+)
+# Sanontoja, joissa "livre" ei tarkoita kirjaa (punta, toimittaa).
+NOT_BOOK_RE = re.compile(r"\b(livres? sterling|\d+ livres?)\b", re.IGNORECASE)
+
+FILM_RE = re.compile(
+    r"\b("
+    r"films?|cinéma|cinémas|cinéastes?|cinématographi\w*|long[- ]métrages?|court[- ]métrages?|"
+    r"réalisat(?:eur|rice)s?|actrices?|comédiens?|comédiennes?|"
+    r"séries? (?:télé|tv|télévisée?s?|netflix|policières?|américaines?|françaises?|britanniques?)|"
+    r"mini-séries?|sitcoms?|saison \d+|documentaires?|bande-annonce|bandes-annonces|"
+    r"box-office|tournage|en salles|au cinéma|festival de cannes|palme d['’]or|césars?|oscars?|"
+    r"netflix|canal\+|disney\+|prime video|hbo|apple tv\+?|arte|streaming"
+    r")\b",
+    re.IGNORECASE,
+)
+
+CUISINE_RE = re.compile(
+    r"\b("
+    r"recettes?|cuisines?|cuisiner|cuisinière?s?|cuisinier|gastronomi\w*|restaurants?|bistrots?|"
+    r"chefs? (?:cuisinier|étoilée?s?|pâtissiers?)|guide michelin|étoilée? michelin|"
+    r"pâtisseries?|pâtissiers?|boulangeries?|boulangers?|fromages?|vins?|vignerons?|desserts?|"
+    r"repas|ingrédients?|cuisson|gâteaux?|tartes?|soupes?|légumes?|apéritif|apéro|"
+    r"brunch|plats? (?:du jour|traditionnels?|typiques?)|saveurs?|gourmande?s?|"
+    r"chocolat|crêpes?"
+    r")\b",
+    re.IGNORECASE,
+)
+
+VOYAGE_RE = re.compile(
+    r"\b("
+    r"voyages?|voyager|voyageurs?|voyageuses?|destinations?|vacances|séjours?|escapades?|"
+    r"randonnées?|plages?|hôtels?|tourisme|touristiques?|touristes?|itinéraires?|week-ends? à|"
+    r"road trip|visiter|à découvrir|patrimoine|villages?|îles?|croisières?|"
+    r"trains? de nuit|en train|sac à dos|camping|parcs? nationa(?:l|ux)|sentiers?"
+    r")\b",
+    re.IGNORECASE,
+)
+
+# Ingressit voivat alkaa lajityypillä isoin kirjaimin, esim. "CRITIQUE. ".
+GENRE_RE = re.compile(r"^([A-ZÀÂÇÉÈÊËÎÏÔÙÛÜ][A-ZÀÂÇÉÈÊËÎÏÔÙÛÜ0-9 \-&']{4,40})\.\s+")
+# WordPress-syötteiden loppurivi, esim. "L’article X est apparu en premier sur Y."
+WP_FOOTER_RE = re.compile(
+    r"\s*(?:L['’]article|Cet article|The post)\s.+?\s(?:est apparu en premier sur|a été publié en premier sur|appeared first on)\s.+$",
+    re.S,
+)
+
+
+# --------------------------------------------------------------------------- apufunktiot
+
+def fetch(url: str, timeout: int = 25, limit: int | None = None) -> bytes:
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, text/html;q=0.8, */*;q=0.5",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return response.read(limit) if limit else response.read()
+
+
+def clean_text(raw: str) -> str:
+    text = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", raw or "", flags=re.S | re.I)
+    text = re.sub(r"<br\s*/?>|</p>", " ", text, flags=re.I)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = html.unescape(text)
+    text = unicodedata.normalize("NFC", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def truncate(text: str, limit: int = SUMMARY_CHARS) -> str:
+    """Lyhentää tekstin virkkeen rajalta. Jos ensimmäinenkin virke on liian pitkä, katkaistaan sanan rajalta."""
+    if len(text) <= limit:
+        return text
+    sentences = re.findall(r".+?(?:[.!?…]+[”\"’)]*(?=\s|$)|$)", text)
+    out = ""
+    for sentence in sentences:
+        candidate = (out + " " + sentence.strip()).strip()
+        if len(candidate) > limit:
+            break
+        out = candidate
+    if len(out) >= 80:
+        return out
+    cut = text[:limit].rsplit(" ", 1)[0].rstrip(",;:–-— ")
+    return cut + "…"
+
+
+def entry_time(entry) -> float | None:
+    for key in ("published_parsed", "updated_parsed", "created_parsed"):
+        value = entry.get(key)
+        if value:
+            return float(calendar.timegm(value))
+    return None
+
+
+def feed_image(entry) -> str | None:
+    candidates: list[str] = []
+    for media in entry.get("media_content") or []:
+        kind = str(media.get("type", "")) + str(media.get("medium", ""))
+        if "image" in kind or not kind:
+            candidates.append(media.get("url", ""))
+    for link in entry.get("links") or []:
+        if link.get("rel") == "enclosure" and str(link.get("type", "")).startswith("image"):
+            candidates.append(link.get("href", ""))
+    for media in entry.get("media_thumbnail") or []:
+        candidates.append(media.get("url", ""))
+    raw = (entry["content"][0].get("value", "") if entry.get("content") else "") + entry.get("summary", "")
+    match = re.search(r"<img[^>]+src=[\"']([^\"']+)[\"']", raw)
+    if match:
+        candidates.append(html.unescape(match.group(1)))
+    return next((u for u in candidates if u and u.startswith("https://")), None)
+
+
+def og_image(page: str) -> str | None:
+    """Etsii jutun sivulta isoimman jakokuvan (og:image)."""
+    for pattern in (
+        r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
+        r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\']',
+    ):
+        match = re.search(pattern, page, re.I)
+        if match:
+            url = html.unescape(match.group(1)).strip()
+            if url.startswith("//"):
+                url = "https:" + url
+            if url.startswith("https://"):
+                return url
+    return None
+
+
+def normalise_link(link: str) -> str:
+    link = link.split("#", 1)[0]
+    link = re.sub(r"[?&](utm_[^&]+|origin=rss)", "", link)
+    return link.rstrip("/")
+
+
+def tags_for(title: str, summary: str, category: str = "vie") -> list[str]:
+    """Kirjat ja elokuvat merkitään kaikista lähteistä. Ruoka ja matkailu vain kulttuuri- ja
+    elämäntapalähteistä, ettei uutisten "repas" tai "touristes" vie juttua Art de vivre -välilehdelle."""
+    text = f"{title} {summary}"
+    tags = []
+    if BOOK_RE.search(text) and not NOT_BOOK_RE.search(text):
+        tags.append("livre")
+    if FILM_RE.search(text):
+        tags.append("film")
+    if category in ("vie", "culture") and CUISINE_RE.search(text):
+        tags.append("cuisine")
+    if category in ("vie", "culture") and VOYAGE_RE.search(text):
+        tags.append("voyage")
+    return tags
+
+
+def difficulty(text: str, zipf: dict[str, float]) -> int:
+    """1 = facile, 2 = moyen, 3 = difficile. Perustuu harvinaisten sanojen osuuteen ja virkkeiden pituuteen."""
+    words = [w.lower().replace("’", "'").rstrip("'") for w in WORD_RE.findall(text)]
+    words = [w for w in words if w]
+    if len(words) < 4:
+        return 0
+    rare = sum(1 for w in words if zipf.get(w, 0) < 3.6) / len(words)
+    long_words = sum(1 for w in words if len(w) > 10) / len(words)
+    sentences = max(1, len(re.findall(r"[.!?…]+", text)))
+    per_sentence = len(words) / sentences
+    score = rare * 100 + long_words * 60 + per_sentence * 0.8
+    if score < 26:
+        return 1
+    if score < 40:
+        return 2
+    return 3
+
+
+# --------------------------------------------------------------------------- syötteet
+
+def read_source(source: dict, now: float) -> tuple[dict, list[dict]]:
+    status = {
+        "id": source["id"],
+        "name": source["name"],
+        "category": source["category"],
+        "url": source["url"],
+        "ok": False,
+        "count": 0,
+        "error": None,
+    }
+    # Virheviestit ovat ranskaksi, koska ne näkyvät sivulla.
+    try:
+        data = fetch(source["url"])
+    except urllib.error.HTTPError as exc:
+        status["error"] = f"HTTP {exc.code}"
+        return status, []
+    except (TimeoutError, socket.timeout):
+        status["error"] = "pas de réponse à temps"
+        return status, []
+    except urllib.error.URLError:
+        status["error"] = "pas de connexion"
+        return status, []
+    except Exception as exc:
+        status["error"] = type(exc).__name__
+        return status, []
+
+    parsed = feedparser.parse(data)
+    if not parsed.entries:
+        status["error"] = "flux vide ou illisible"
+        return status, []
+
+    status["site"] = parsed.feed.get("link")
+    max_age = float(source.get("max_age_days", DEFAULT_MAX_AGE_DAYS)) * 86400
+    exclude = [p.lower() for p in source.get("exclude_url", [])]
+    include = [p.lower() for p in source.get("include_url", [])]
+    required = source.get("require_tag")
+    items = []
+    for entry in parsed.entries:
+        link = entry.get("link", "")
+        title = clean_text(entry.get("title", ""))
+        if not title or not link.startswith(("http://", "https://")):
+            continue
+        if any(p in link.lower() for p in exclude):
+            continue
+        if include and not any(p in link.lower() for p in include):
+            continue
+        published = entry_time(entry) or now
+        if published > now + 3600:
+            published = now
+        if now - published > max_age:
+            continue
+        summary_raw = "" if source.get("no_summary") else entry.get("summary", "")
+        if not summary_raw and entry.get("content"):
+            summary_raw = entry["content"][0].get("value", "")
+        summary = WP_FOOTER_RE.sub("", clean_text(summary_raw))
+        genre = None
+        match = GENRE_RE.match(summary)
+        if match:
+            genre = match.group(1).strip().capitalize()
+            summary = summary[match.end():]
+        summary = truncate(summary)
+        if summary.lower() == title.lower():
+            summary = ""
+        tags = sorted(set(tags_for(title, summary, source["category"])) | set(source.get("tags", [])))
+        if required and required not in tags:
+            continue
+        items.append(
+            {
+                "id": hashlib.sha1(normalise_link(link).encode()).hexdigest()[:12],
+                "title": title,
+                "link": link,
+                "summary": summary,
+                "genre": genre,
+                "published": datetime.fromtimestamp(published, timezone.utc).isoformat(timespec="seconds"),
+                "ts": int(published),
+                "source": source["id"],
+                "category": source["category"],
+                "tags": tags,
+                "image": feed_image(entry),
+            }
+        )
+        if len(items) >= MAX_ITEMS_PER_SOURCE:
+            break
+
+    status["ok"] = True
+    status["count"] = len(items)
+    return status, items
+
+
+def load_config(path: Path) -> tuple[list[dict], list[dict]]:
+    config = json.loads(path.read_text(encoding="utf-8"))
+    sources = []
+    seen = set()
+    for source in config["sources"]:
+        if source.get("enabled", True) is False:
+            continue
+        missing = {"id", "name", "url", "category"} - source.keys()
+        if missing:
+            sys.exit(f"Lähteestä puuttuu kenttiä {sorted(missing)}: {source}")
+        if source["category"] not in CATEGORIES:
+            sys.exit(f"Tuntematon kategoria '{source['category']}' lähteessä {source['id']}")
+        if source["id"] in seen:
+            sys.exit(f"Sama id kahdesti: {source['id']}")
+        seen.add(source["id"])
+        sources.append(source)
+    reddit = [
+        {"name": r["name"], "url": r["url"], "about": r.get("about", "")}
+        for r in config.get("reddit", [])
+        if str(r.get("url", "")).startswith("https://")
+    ]
+    return sources, reddit
+
+
+def add_images(items: list[dict], cache_dir: Path | None) -> None:
+    """Hakee jokaiselle jutulle jakokuvan (og:image). Tulokset säilyvät välimuistissa ajojen välillä."""
+    cache: dict[str, str | None] = {}
+    cache_file = cache_dir / "kuvat.json" if cache_dir else None
+    if cache_file and cache_file.exists():
+        try:
+            cache = json.loads(cache_file.read_text(encoding="utf-8"))
+        except ValueError:
+            cache = {}
+
+    todo = [it for it in items if it["link"] not in cache][:IMAGE_FETCH_LIMIT]
+
+    def find(item: dict) -> tuple[str, str | None]:
+        try:
+            page = fetch(item["link"], timeout=12, limit=200_000).decode("utf-8", "ignore")
+            return item["link"], og_image(page)
+        except Exception:
+            return item["link"], None
+
+    with cf.ThreadPoolExecutor(max_workers=6) as pool:
+        for link, image in pool.map(find, todo):
+            cache[link] = image
+    found = 0
+    for item in items:
+        better = cache.get(item["link"])
+        if better:
+            item["image"] = better
+            found += 1
+    print(f"Kuvat: {found}/{len(items)} jutulla jakokuva ({len(todo)} haettu nyt).")
+
+    if cache_file:
+        live = {it["link"] for it in items}
+        cache = {k: v for k, v in cache.items() if k in live}
+        cache_file.parent.mkdir(parents=True, exist_ok=True)
+        cache_file.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--sources", default="sources.json", type=Path)
+    parser.add_argument("--data", default="data", type=Path)
+    parser.add_argument("--out", default="_site", type=Path)
+    parser.add_argument("--cache", default=None, type=Path)
+    parser.add_argument("--no-images", action="store_true")
+    args = parser.parse_args()
+
+    sources, reddit = load_config(args.sources)
+    now = time.time()
+
+    statuses: dict[str, dict] = {}
+    all_items: list[dict] = []
+    with cf.ThreadPoolExecutor(max_workers=8) as pool:
+        for status, items in pool.map(lambda s: read_source(s, now), sources):
+            statuses[status["id"]] = status
+            all_items.extend(items)
+
+    order = {s["id"]: i for i, s in enumerate(sources)}
+    all_items.sort(key=lambda it: (order[it["source"]], -it["ts"]))
+    unique: dict[str, dict] = {}
+    for item in all_items:
+        unique.setdefault(item["id"], item)
+    items = sorted(unique.values(), key=lambda it: it["ts"], reverse=True)[:MAX_ITEMS_TOTAL]
+
+    ordered_statuses = [statuses[s["id"]] for s in sources]
+    for status in ordered_statuses:
+        mark = "ok " if status["ok"] else "VIRHE"
+        detail = f"{status['count']} juttua" if status["ok"] else status["error"]
+        print(f"  [{mark}] {status['name']}: {detail}")
+
+    if not any(s["ok"] for s in ordered_statuses):
+        print("Yksikään syöte ei toiminut, tiedostoja ei kirjoiteta.", file=sys.stderr)
+        return 1
+
+    if not args.no_images:
+        add_images(items, args.cache)
+
+    zipf = ordbok_data.zipf_table(args.data)
+    for item in items:
+        item["level"] = difficulty(f"{item['title']}. {item['summary']}", zipf)
+
+    args.out.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "generated": datetime.fromtimestamp(now, timezone.utc).isoformat(timespec="seconds"),
+        "sources": ordered_statuses,
+        "reddit": reddit,
+        "items": items,
+    }
+    (args.out / "feed.json").write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"feed.json: {len(items)} juttua {sum(s['ok'] for s in ordered_statuses)}/{len(sources)} lähteestä.")
+
+    dictionary = ordbok_data.load(args.data)
+    (args.out / "ordbok.json").write_text(json.dumps(dictionary, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"ordbok.json: {len(dictionary['d'])} hakusanaa, {len(dictionary['f'])} taivutusmuotoa.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

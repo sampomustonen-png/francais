@@ -1,0 +1,2213 @@
+# Vocabulaire de base : les mots les plus fréquents, sens le plus courant en premier.
+# Format :  mot|catégorie|traduction, traduction = exemple; sens suivant; ...
+# Les sens sont séparés par un point-virgule (quatre au maximum). Après « = » vient un exemple.
+# Ces lignes remplacent les sens du dictionnaire. corrections.json passe encore avant.
+de|prép.|of = la maison de Marie; from = venir de Paris; some, any = du pain, des livres; by, with = entouré de
+le|art.|the = le livre; him, it = je le vois
+la|art.|the = la maison; her, it = je la vois
+les|art.|the = les enfants; them = je les vois
+un|art.|a, an = un livre; one = un ou deux
+une|art.|a, an = une maison; one; front page = à la une
+du|art.|of the = le prix du pain; some, any = du café
+des|art.|some, any = des amis; of the = la voix des enfants
+au|prép. + art.|to the, at the (à + le) = aller au cinéma; in = au printemps, au Canada
+aux|prép. + art.|to the, at the (à + les) = parler aux enfants; with = la tarte aux pommes
+en|prép.|in = en France, en 2026; to = aller en Italie; by, while = en marchant; of it, some, from there = j'en ai deux
+que|conj.|that = il dit que…; than, as = plus grand que; what = que fais-tu ?; only = ne … que
+qui|pron.|who = qui est-ce ?; who, which, that = l'homme qui parle
+à|prép.|to = aller à Paris; at, in = à la maison, à 8 heures; with = la fille aux yeux bleus
+pour|prép.|for = pour toi; in order to = pour gagner; for (a time) = pour deux ans
+dans|prép.|in, inside = dans la maison; into; in (time) = dans deux jours
+par|prép.|by = écrit par; through = par la fenêtre; per = par jour; out of = par peur
+sur|prép.|on = sur la table; about = un livre sur l'Europe; out of = un sur dix
+avec|prép.|with
+sans|prép.|without
+sous|prép.|under, below; in (weather) = sous la pluie
+entre|prép.|between; among
+contre|prép.|against; versus; in exchange for
+chez|prép.|at the home of = chez moi; at (shop, doctor) = chez le médecin; with, among = chez les jeunes
+vers|prép.|towards; around (time) = vers midi; line of verse = substantif
+depuis|prép.|since = depuis 2020; for (until now) = depuis deux ans; from = depuis Paris
+pendant|prép.|during; for (a time) = pendant une heure; while = pendant que
+avant|prép.|before = avant midi; in front, ahead; front = l'avant
+après|prép.|after; afterwards = adverbe; after all = après tout
+selon|prép.|according to
+malgré|prép.|despite, in spite of
+grâce|nom f.|thanks to = grâce à; grace, charm; mercy, pardon
+il|pron.|he; it = il pleut, il faut
+elle|pron.|she; her = avec elle; it (feminine noun)
+ils|pron.|they (masculine or mixed)
+elles|pron.|they (feminine); them = avec elles
+on|pron.|we (informal) = on y va; one, people, you = on dit que; someone = on a volé
+nous|pron.|we; us, to us; ourselves, each other = nous nous voyons
+vous|pron.|you (plural or polite); to you; yourselves, each other
+je|pron.|I
+tu|pron.|you (informal, singular)
+me|pron.|me, to me; myself = je me lave
+te|pron.|you, to you (informal); yourself = tu te laves
+se|pron.|himself, herself, itself, themselves = il se lave; each other = ils se parlent; (reflexive verb) = se rendre compte, s'agir de
+lui|pron.|him; to him, to her = je lui parle; himself = lui-même
+leur|dét.|their = leur maison; to them = je leur parle
+y|pron.|there = j'y vais; to it, about it, in it = j'y pense; there is, there are = il y a
+ce|dét.|this, that = ce livre; it, that = c'est, ce qui, ce que
+cela|pron.|that, it
+ça|pron.|that, it = ça va ?
+son|dét.|his, her, its = son livre; sound = substantif
+sa|dét.|his, her, its
+ses|dét.|his, her, its (plural)
+ne|adv.|not = ne … pas; no longer = ne … plus; never = ne … jamais; only = ne … que
+pas|adv.|not = ne … pas, pas encore; step = un pas
+plus|adv.|more = plus grand; no longer = ne … plus; most = le plus; plus (+)
+moins|adv.|less = moins cher; least = le moins; minus = cinq moins deux
+très|adv.|very
+trop|adv.|too, too much = trop cher; too many = trop de gens; really (informal)
+bien|adv.|well = il parle bien; very, quite = bien sûr, bien trop; good, fine = c'est bien; property, goods = les biens
+mal|adv.|badly; pain, harm = avoir mal; evil = le mal
+aussi|adv.|also, too; as = aussi grand que; so, therefore = en début de phrase
+encore|adv.|still = il est encore là; again = encore une fois; more = encore du café; yet = pas encore
+alors|adv.|then, at that time; so, therefore; well then
+donc|conj.|so, therefore
+mais|conj.|but; why = mais oui !
+ou|conj.|or; either … or = ou … ou
+où|adv.|where; when = le jour où
+si|conj.|if, whether; so = si grand; yes (contradicting) = mais si !
+comme|conj.|as, like = comme toi; how = comme c'est beau !; since, as = comme il pleut
+quand|conj.|when
+car|conj.|because, for; coach, bus = un car
+puis|adv.|then, and then
+ainsi|adv.|thus, so, in this way; for example = ainsi que = as well as
+déjà|adv.|already; before = tu es déjà venu ?
+toujours|adv.|always; still = il est toujours là
+jamais|adv.|never = ne … jamais; ever = plus que jamais
+souvent|adv.|often
+peu|adv.|little, not much = peu de temps; few = peu de gens; a bit = un peu
+beaucoup|adv.|a lot, much, many = beaucoup de
+là|adv.|there; here = je suis là; then = à partir de là
+ici|adv.|here
+tout|dét.|all, every = tout le monde, tous les jours; everything = substantif ou pronom; quite, very = tout petit; all of a sudden = tout à coup
+tous|pron.|all, everyone = tous les jours, nous tous
+même|adj.|same = le même; even = même lui; -self = lui-même
+autre|adj.|other, another = un autre jour; others = les autres
+rien|pron.|nothing = ne … rien; anything = sans rien dire
+personne|nom f.|person; nobody = ne … personne
+chaque|dét.|each, every
+non|adv.|no; not = non seulement
+oui|adv.|yes
+être|verbe|to be = il est grand; (auxiliary) has, have = il est venu; being = un être humain
+avoir|verbe|to have = j'ai un livre; (auxiliary) have, has = j'ai mangé; to be (age, feeling) = j'ai 20 ans, j'ai faim; there is = il y a
+faire|verbe|to do; to make; to be (weather) = il fait beau; to have done, make someone = faire réparer
+aller|verbe|to go; to be going to (future) = je vais partir; to be (health) = ça va ?; to suit = ça te va bien
+dire|verbe|to say, to tell; to mean = vouloir dire; to think of = qu'en dis-tu ?
+pouvoir|verbe|can, to be able to; may, might = il peut pleuvoir; power = le pouvoir
+vouloir|verbe|to want; to mean = vouloir dire; would like = je voudrais
+devoir|verbe|must, to have to; should = tu devrais; to owe; duty, homework = le devoir
+falloir|verbe|to be necessary, must = il faut partir; to need = il me faut; to take (time) = il faut deux heures
+savoir|verbe|to know (a fact); to know how to = savoir nager; knowledge = le savoir
+voir|verbe|to see; to understand = je vois; to meet, visit = voir des amis
+venir|verbe|to come; to have just = venir de faire = je viens d'arriver; to come from = venir de Paris
+prendre|verbe|to take; to have (food, drink) = prendre un café; to catch (transport) = prendre le train
+mettre|verbe|to put, to place; to put on (clothes); to take (time) = mettre deux heures; to start = se mettre à
+donner|verbe|to give; to look out on = donner sur la mer
+passer|verbe|to pass, to go by; to spend (time); to happen = se passer; to take (exam) = passer un examen
+rester|verbe|to stay, to remain; to be left = il reste du pain
+trouver|verbe|to find; to think = je trouve que…; to be located = se trouver
+parler|verbe|to speak, to talk
+penser|verbe|to think; to think about = penser à; to intend = je pense partir
+croire|verbe|to believe; to think
+arriver|verbe|to arrive; to happen = qu'est-ce qui arrive ?; to manage to = arriver à faire
+partir|verbe|to leave, to go away; from = à partir de
+sortir|verbe|to go out; to take out; to come out, be released = le film sort mercredi
+rendre|verbe|to give back, to return; to make = rendre heureux; to go = se rendre à; to realise = se rendre compte
+tenir|verbe|to hold; to keep; to be keen on = tenir à
+mourir|verbe|to die
+suivre|verbe|to follow; to take (a course) = suivre un cours
+vivre|verbe|to live; to experience
+connaître|verbe|to know (a person, place), to be familiar with; to experience = connaître le succès
+comprendre|verbe|to understand; to include
+demander|verbe|to ask; to ask for; to wonder = se demander
+laisser|verbe|to leave; to let = laisser faire
+porter|verbe|to carry; to wear; to bear (name, responsibility) = porter plainte = to file a complaint
+appeler|verbe|to call; to be called = s'appeler
+montrer|verbe|to show
+jouer|verbe|to play; to act; to gamble
+devenir|verbe|to become
+revenir|verbe|to come back, to return
+mener|verbe|to lead; to conduct = mener une enquête
+tomber|verbe|to fall; to happen to be = tomber sur
+compter|verbe|to count; to intend = je compte partir; to matter = ça compte
+agir|verbe|to act; to be about, to concern = il s'agit de
+sembler|verbe|to seem
+permettre|verbe|to allow, to enable
+présenter|verbe|to present, to introduce; to run (for election) = se présenter
+annoncer|verbe|to announce
+estimer|verbe|to estimate; to consider, to believe
+juger|verbe|to judge; to try (in court)
+fait|nom m.|fact = en fait = in fact; event, incident = les faits
+temps|nom m.|time; weather; tense
+an|nom m.|year = deux ans; age = j'ai 20 ans
+année|nom f.|year; school year
+fois|nom f.|time (occurrence) = trois fois; times (×) = deux fois plus; at the same time = à la fois
+jour|nom m.|day; daylight; up to date = à jour
+monde|nom m.|world; people = il y a du monde; everybody = tout le monde
+pays|nom m.|country; region, area
+état|nom m.|state, condition; State = l'État
+gens|nom m.|people
+homme|nom m.|man; human being, mankind
+femme|nom f.|woman; wife
+enfant|nom m./f.|child
+vie|nom f.|life; living = gagner sa vie
+part|nom f.|share, part; on behalf of = de la part de; elsewhere = autre part; apart from = à part
+partie|nom f.|part; game, match = une partie d'échecs; party (law); to be part of = faire partie de
+place|nom f.|square; seat; space, room; place, position
+cours|nom m.|course, class; price, rate = le cours de l'euro; during = au cours de; flow
+compte|nom m.|account; count; to realise = se rendre compte; in the end = en fin de compte
+coup|nom m.|blow, hit; shot = coup de feu; so, as a result = du coup; suddenly = tout à coup
+côté|nom m.|side; next to = à côté de; aside = de côté
+fin|nom f.|end; aim = la fin et les moyens; fine, thin = adjectif
+moment|nom m.|moment; at the moment = en ce moment
+cas|nom m.|case; in any case = en tout cas; if = au cas où
+lieu|nom m.|place; to take place = avoir lieu; instead of = au lieu de
+point|nom m.|point; full stop; about to = sur le point de; to such an extent = à tel point
+sens|nom m.|meaning; direction; sense = le bon sens
+suite|nom f.|continuation, rest; sequel; following, after = à la suite de, suite à; in a row = de suite
+droit|nom m.|right = les droits de l'homme; law = étudier le droit; straight, right (side) = adjectif
+politique|adj.|political; politics; policy = la politique étrangère; politician = un politique
+grand|adj.|big, large, tall; great = un grand écrivain; adult = les grands
+petit|adj.|small, little; young = un petit garçon; child, little one = les petits
+bon|adj.|good; right, correct = la bonne réponse; well, OK = interjection; voucher = un bon
+nouveau|adj.|new; again = de nouveau
+premier|adj.|first; Prime Minister = Premier ministre
+dernier|adj.|last; latest, recent; last (previous) = l'an dernier
+seul|adj.|alone; only = le seul; single
+vrai|adj.|true; real
+mort|adj.|dead; death = la mort
+passé|nom m.|past; past, last = la semaine passée
+français|adj.|French; French language = le français; French person = un Français
+mieux|adv.|better; best = le mieux
+meilleur|adj.|better; best = le meilleur
+pire|adj.|worse; worst = le pire
+nouvelle|nom f.|piece of news = les nouvelles; short story; new = adjectif
+accord|nom m.|agreement, deal; OK = d'accord; chord
+rapport|nom m.|report; relationship; compared to = par rapport à
+face|nom f.|face; facing, in the face of = face à; opposite = en face de
+bout|nom m.|end, tip; piece, bit; at the end of = au bout de
+fond|nom m.|bottom; background; basically = au fond; fund = un fonds
+mesure|nom f.|measure; measurement; able to = être en mesure de; as = à mesure que
+prix|nom m.|price; prize, award
+lors|adv.|during, at the time of = lors de
+quant|adv.|as for = quant à
+afin|conj.|in order to = afin de; so that = afin que
+parce|conj.|because = parce que
+
+# Les 2 000 mots suivants par ordre de fréquence (sens courants d'abord).
+# « nom » sans genre prend le genre du dictionnaire.
+et|conj.|and = toi et moi; and then, so = et alors ?
+mon|dét.|my = mon livre, mon amie
+deux|num.|two = deux enfants
+moi|pron.|me, I = c'est moi, moi aussi; myself = chez moi
+votre|dét.|your (polite or plural) = votre maison
+notre|dét.|our = notre ville
+dont|pron.|whose, of which = l'homme dont le fils…; about which, of whom = le livre dont je parle; including = dont deux enfants
+toi|pron.|you (informal) = c'est toi ?, avec toi
+quoi|pron.|what = quoi ?, à quoi bon ?; which = ce à quoi je pense; anything = n'importe quoi
+ton|dét.|your (informal) = ton frère; tone (nom m.) = sur un ton calme
+juste|adj.|fair, just = une décision juste; right, correct = la réponse juste; tight; just, only (adv.) = juste un peu
+vraiment|adv.|really, truly = c'est vraiment bien
+mes|dét.|my (plural) = mes amis
+quelque|dét.|some, a few = quelques jours; some (+ sing.) = quelque chose; about, some (adv.) = quelque 200 personnes
+comment|adv.|how = comment ça va ?; what? (pardon?) = comment ?
+trois|num.|three
+chose|nom f.|thing = quelque chose (something), autre chose (something else)
+plusieurs|dét.|several = plusieurs fois
+pourquoi|adv.|why = pourquoi pas ?
+ta|dét.|your (informal) = ta mère
+ville|nom f.|town, city = en ville (in town, downtown)
+mois|nom m.|month = le mois dernier
+histoire|nom f.|history = l'histoire de France; story = raconter une histoire; fuss, trouble = faire des histoires
+travail|nom m.|work, job = au travail; labour; piece of work (pl. travaux) = travaux (roadworks, building work)
+aujourd'hui|adv.|today = aujourd'hui, demain; nowadays
+merci|interj.|thank you = merci beaucoup; mercy (nom f.) = à la merci de
+celui|pron.|the one = celui-ci (this one), celui de Paul (Paul's), celui qui… (the one who…)
+nom|nom m.|name = au nom de (in the name of, on behalf of); noun
+également|adv.|also, too, as well = il est également ministre; equally
+eux|pron.|them = avec eux, chez eux (at their place)
+tant|adv.|so much, so many = tant de gens; as long as = tant que; as … as = tant bien que mal (somehow)
+groupe|nom m.|group; band (music)
+maintenant|adv.|now = maintenant ou jamais
+maison|nom f.|house, home = à la maison; company, firm = maison d'édition (publisher); homemade (adj.) = fait maison
+saint|adj.|holy = la semaine sainte; saint (nom) = saint Pierre
+tête|nom f.|head = mal à la tête; top, front = en tête (in the lead), à la tête de (at the head of); face, look = faire la tête (to sulk)
+aimer|verbe|to love = je t'aime; to like = aimer la musique; to prefer = aimer mieux
+famille|nom f.|family = en famille
+assez|adv.|enough = assez d'argent, j'en ai assez (I've had enough); quite, fairly = assez bien
+besoin|nom m.|need = avoir besoin de (to need); au besoin (if necessary)
+demande|nom f.|request, application = sur demande; demand = l'offre et la demande
+genre|nom m.|kind, sort, type = ce genre de film; genre; gender; like (informal) = genre, c'est nul
+société|nom f.|society; company, firm = une société anonyme
+question|nom f.|question = poser une question; issue, matter = il est question de (it's about); hors de question (out of the question)
+raison|nom f.|reason = pour cette raison; avoir raison (to be right); reason, sanity = perdre la raison
+ailleurs|adv.|elsewhere = partout ailleurs; d'ailleurs = besides, moreover; par ailleurs = also, on the other hand
+certain|adj.|certain, sure = j'en suis certain; some, certain (before noun) = certains jours; certains (pron.) = some people
+ci|adv.|here (after a noun) = ce livre-ci (this book); ci-dessous (below), ci-joint (attached)
+devant|prép.|in front of = devant la maison; before, faced with = devant la justice; front (nom m.)
+jeu|nom m.|game = jeu vidéo; play, playing = le jeu des acteurs; set = un jeu de clés; en jeu = at stake
+soir|nom m.|evening = ce soir (tonight), le soir (in the evening)
+effet|nom m.|effect = effet de serre; en effet = indeed, in fact
+général|adj.|general = en général (generally); general (nom m.) = un général
+jean|nom m.|jeans, denim = un jean
+jusqu'à|prép.|until = jusqu'à demain; as far as, up to = jusqu'à Paris; even = jusqu'à pleurer
+ni|conj.|nor, neither … nor = ni toi ni moi, sans sucre ni lait
+surtout|adv.|above all, especially = surtout le soir; surtout pas = definitely not
+équipe|nom f.|team = équipe de France; shift, crew = l'équipe de nuit
+enfin|adv.|finally, at last = enfin seul; well, I mean = enfin, je crois
+nombre|nom m.|number = un grand nombre de; un certain nombre de = a number of
+porte|nom f.|door = frapper à la porte; gate = porte d'embarquement
+seulement|adv.|only = seulement deux; non seulement … mais = not only … but; just = il vient seulement d'arriver
+site|nom m.|website = site internet; site, place = site historique
+eau|nom f.|water = eau minérale
+ensemble|adv.|together = vivre ensemble; whole, set (nom m.) = dans l'ensemble (on the whole), l'ensemble des (all the)
+mère|nom f.|mother
+près|adv.|near, close = près de la gare; nearly = près de 300 personnes; à peu près = about
+quel|dét.|what, which = quel âge as-tu ?; what a = quelle belle journée !
+quelqu'un|pron.|someone, somebody = quelqu'un d'autre; anyone = il y a quelqu'un ?
+tes|dét.|your (informal, plural) = tes parents
+aucun|dét.|no, not any = aucun problème, sans aucun doute; none = aucun d'entre eux
+loi|nom f.|law = projet de loi (bill), la loi sur…
+parti|nom m.|party (political) = parti socialiste; prendre parti = to take sides; tirer parti de = to make use of
+père|nom m.|father
+dès|prép.|from, as early as = dès demain, dès 1990; as soon as = dès que; dès lors = from then on
+autant|adv.|as much, as many = autant de livres; d'autant plus que = all the more since; pour autant = for all that
+fille|nom f.|girl; daughter = sa fille aînée
+gouvernement|nom m.|government
+gros|adj.|big, large = une grosse voiture; fat; heavy, serious = un gros problème; en gros = roughly, wholesale
+guerre|nom f.|war = la Seconde Guerre mondiale
+niveau|nom m.|level = au niveau de (at the level of, in terms of); standard
+quatre|num.|four
+semaine|nom f.|week = la semaine prochaine
+service|nom m.|service = service public; department = service des urgences; favour = rendre service; serve (tennis)
+article|nom m.|article = un article de journal; item, product
+ligne|nom f.|line = en ligne (online); route, service = ligne de métro; figure = garder la ligne
+problème|nom m.|problem = pas de problème
+président|nom m.|president = président de la République; chairman
+cause|nom f.|cause = à cause de (because of); case, cause = défendre une cause; mettre en cause = to call into question
+dieu|nom m.|god = Dieu, mon Dieu !
+début|nom m.|beginning, start = au début, début mai
+exemple|nom m.|example = par exemple
+fils|nom m.|son
+jeune|adj.|young = les jeunes (young people)
+système|nom m.|system
+air|nom m.|air = en plein air (outdoors); look, appearance = avoir l'air (to seem); tune = un air connu
+bas|adj.|low = à voix basse; bottom (nom m.) = en bas (downstairs, below); stocking (nom m.)
+centre|nom m.|centre = centre-ville (town centre); centre (politics) = le centre
+façon|nom f.|way, manner = de cette façon; de toute façon = anyway
+heure|nom f.|hour = une heure; time, o'clock = quelle heure est-il ?; à l'heure = on time
+loin|adv.|far = loin de Paris; de loin = by far
+possible|adj.|possible = le plus vite possible
+projet|nom m.|project, plan = projet de loi (bill)
+conseil|nom m.|piece of advice = un conseil; council, board = conseil municipal, conseil des ministres
+idée|nom f.|idea = bonne idée
+notamment|adv.|in particular, notably, including
+nuit|nom f.|night = bonne nuit, la nuit
+argent|nom m.|money = gagner de l'argent; silver
+tour|nom m./f.|turn (m.) = c'est ton tour; tour, trip, round (m.) = faire le tour de; tower (f.) = la tour Eiffel; trick (m.)
+vue|nom f.|view = vue sur la mer; sight, eyesight; en vue de = with a view to; point de vue = point of view
+dessus|adv.|on top, on it = mets-le dessus; au-dessus de = above
+film|nom m.|film, movie
+corps|nom m.|body; corps = corps diplomatique
+ensuite|adv.|then, next, afterwards
+forme|nom f.|form, shape = en forme de; fitness = être en forme (to be fit)
+haut|adj.|high, tall = un haut mur; top (nom m.) = en haut (upstairs, at the top); loud, aloud = à haute voix
+or|conj.|now, but, yet = or, il était absent; gold (nom m.) = une médaille d'or
+plutôt|adv.|rather = plutôt que; quite, fairly = plutôt bien
+chef|nom m.|head, boss, leader = chef de l'État; chef (cook) = chef étoilé
+fort|adj.|strong = un café fort; loud; good at = fort en maths; very (adv.) = fort heureusement
+public|adj.|public = en public; audience, public (nom m.) = le grand public
+tard|adv.|late = plus tard (later), trop tard
+main|nom f.|hand = à la main (by hand); en main = in hand
+terre|nom f.|earth, ground = par terre (on the ground); land = sur terre; soil
+titre|nom m.|title = titre de champion; headline; à titre de = as
+matin|nom m.|morning = ce matin, le matin
+mise|nom f.|putting, placing = mise en place (setting up), mise en œuvre (implementation), mise en scène (staging, direction)
+plan|nom m.|plan = un plan d'action; map = le plan du métro; level = au premier plan (in the foreground), sur le plan (in terms of); shot (film)
+saison|nom f.|season = la saison des pluies, la saison 2
+type|nom m.|type, kind = ce type de; guy (informal) = un type sympa
+aide|nom f.|help, aid = à l'aide de (with the help of), aide sociale (benefits); assistant (nom m./f.)
+beau|adj.|beautiful, handsome, fine = un beau jour; nice (weather) = il fait beau; avoir beau + inf. = to do in vain
+choix|nom m.|choice = au choix (to choose from)
+long|adj.|long = longtemps; le long de = along; length (nom m.)
+minute|nom f.|minute
+retour|nom m.|return = de retour (back), aller-retour (return ticket); feedback
+situation|nom f.|situation; position, job
+vite|adv.|quickly, fast = viens vite !; soon = au plus vite
+amour|nom m.|love = faire l'amour
+base|nom f.|base, basis = à base de (made from), de base (basic)
+journée|nom f.|day (daytime) = toute la journée, bonne journée
+nord|nom m.|north
+moyen|adj.|average, medium = de taille moyenne; means, way (nom m.) = au moyen de (by means of), les moyens (means, money)
+ordre|nom m.|order = mettre en ordre; command = donner un ordre; order, kind = d'ordre politique
+école|nom f.|school = à l'école
+but|nom m.|goal, aim = dans le but de (in order to); goal (sport) = marquer un but
+cinq|num.|five
+manière|nom f.|way, manner = de manière à (so as to), de toute manière (anyway)
+mars|nom m.|March = en mars; Mars (planet)
+pierre|nom f.|stone = un mur de pierre
+sujet|nom m.|subject, topic = au sujet de (about); subject (person)
+truc|nom m.|thing, thingy (informal); trick, knack
+ministre|nom m./f.|minister = Premier ministre, ministre de la Santé
+parfois|adv.|sometimes
+rue|nom f.|street = dans la rue
+sud|nom m.|south
+super|adj.|great, super (informal) = c'est super
+sûr|adj.|sure, certain = bien sûr (of course); safe, reliable = un endroit sûr
+unir|verbe|to unite = les États-Unis
+vidéo|nom f.|video = jeu vidéo
+ami|nom m.|friend = mon ami, petit ami (boyfriend)
+art|nom m.|art = œuvre d'art
+bel|adj.|beautiful, fine (beau before a vowel) = un bel homme; bel et bien = well and truly
+gauche|adj.|left = la main gauche; left (politics, nom f.) = la gauche; clumsy
+livre|nom m./f.|book (m.) = un livre de cuisine; pound (f.) = une livre sterling
+musique|nom f.|music
+région|nom f.|region, area
+entreprise|nom f.|company, business, firm; undertaking
+longtemps|adv.|(for) a long time = il y a longtemps (long ago), depuis longtemps
+match|nom m.|match, game = match de foot
+simple|adj.|simple, easy; mere, just = un simple citoyen
+voilà|adv.|there is, here is = voilà le bus; that's it, there you are = voilà !; ago = voilà deux ans
+chambre|nom f.|bedroom, room = chambre d'hôtel; chamber = Chambre des députés
+deuxième|adj.|second
+importer|verbe|to matter = n'importe quoi (anything), peu importe (it doesn't matter); to import
+juin|nom m.|June
+lorsque|conj.|when = lorsqu'il est arrivé
+mai|nom m.|May
+peur|nom f.|fear = avoir peur (to be afraid), faire peur (to frighten)
+plein|adj.|full = plein de gens (lots of people); en plein air (outdoors), en plein centre (right in the centre)
+police|nom f.|police; policy (insurance); font
+septembre|nom m.|September
+sécurité|nom f.|security, safety = en sécurité; sécurité sociale (social security)
+série|nom f.|series (TV) = une série Netflix; series, string = une série d'attentats
+ancien|adj.|former, ex- (before noun) = un ancien ministre; old, ancient (after noun) = un meuble ancien
+anglais|adj.|English; English (language, nom m.)
+important|adj.|important; large, considerable = une somme importante
+membre|nom m.|member = État membre; limb
+merde|nom f.|shit (vulgar); damn! = merde !
+parmi|prép.|among = parmi eux
+peine|nom f.|sentence, penalty = peine de mort; sorrow; à peine = hardly, barely; ce n'est pas la peine = there's no need
+presque|adv.|almost, nearly
+tellement|adv.|so, so much = tellement beau, tellement de gens
+époque|nom f.|time, period, era = à l'époque (at the time)
+doute|nom m.|doubt = sans doute (probably), sans aucun doute (undoubtedly)
+force|nom f.|strength, force = de force (by force); forces (troops) = les forces armées
+lire|verbe|to read = lire un livre
+marché|nom m.|market = marché aux puces; deal = bon marché (cheap)
+mot|nom m.|word = mot de passe (password); note = un petit mot
+recherche|nom f.|research = la recherche scientifique; search = à la recherche de (looking for)
+santé|nom f.|health = à votre santé ! (cheers)
+train|nom m.|train = en train; en train de + inf. = in the middle of (doing)
+voix|nom f.|voice = à voix basse; vote = obtenir 52 % des voix
+écrire|verbe|to write
+affaire|nom f.|affair, matter = c'est mon affaire; case (legal, scandal) = l'affaire Dreyfus; business, deal = les affaires; bargain
+autour|adv.|around = autour de la table, tout autour
+avis|nom m.|opinion = à mon avis (in my opinion); notice = avis de recherche
+cependant|adv.|however, yet
+développement|nom m.|development
+hier|adv.|yesterday
+juillet|nom m.|July
+million|num.|million = un million d'euros
+national|adj.|national
+nombreux|adj.|many, numerous = de nombreux pays
+parent|nom m.|parent; relative
+propre|adj.|own (before noun) = sa propre voiture; clean (after noun) = des mains propres; proper, specific
+droite|nom f.|right (side) = à droite; right (politics) = la droite
+environ|adv.|about, around = environ 50 personnes
+mec|nom m.|guy, bloke (informal)
+pourtant|adv.|yet, however, nevertheless
+abord|nom m.|first, at first = d'abord; tout d'abord (first of all); surroundings = les abords de
+envie|nom f.|desire, wish = avoir envie de (to want, to feel like); envy
+gars|nom m.|guy, lad (informal)
+octobre|nom m.|October
+siècle|nom m.|century = au XXe siècle
+terme|nom m.|term, word; end = à terme (eventually); à court terme (in the short term)
+voiture|nom f.|car = en voiture
+avril|nom m.|April
+frère|nom m.|brother
+janvier|nom m.|January
+population|nom f.|population
+roi|nom m.|king
+action|nom f.|action = passer à l'action; share (finance) = des actions
+club|nom m.|club
+culture|nom f.|culture; growing, crop = la culture du blé
+cœur|nom m.|heart = par cœur (by heart); centre, core = au cœur de (in the heart of)
+difficile|adj.|difficult, hard
+exister|verbe|to exist
+milieu|nom m.|middle = au milieu de; environment, circles = le milieu culturel
+produit|nom m.|product = produits laitiers (dairy products)
+programme|nom m.|programme, schedule; syllabus; platform (politics)
+propos|nom m.|about, regarding = à propos de; by the way = à propos; remarks, words = des propos racistes
+route|nom f.|road = en route (on the way); route
+derrière|prép.|behind = derrière la porte
+direction|nom f.|direction = en direction de (towards); management = la direction
+emploi|nom m.|job, employment = chercher un emploi; use = mode d'emploi (instructions)
+feu|nom m.|fire = au feu !; heat (cooking) = à feu doux; traffic light = le feu rouge; the late (adj.) = feu son père
+marche|nom f.|walk, walking = la marche à pied; march (protest); step, stair; en marche = running, working
+période|nom f.|period = la période de Noël
+tel|adj.|such = un tel homme, tel que (such as); tel quel = as it is
+âge|nom m.|age = quel âge as-tu ?; Moyen Âge (Middle Ages)
+armée|nom f.|army
+bois|nom m.|wood = en bois (wooden); woods = se promener dans les bois
+chance|nom f.|luck = bonne chance, avoir de la chance (to be lucky); chance = une chance sur deux
+confiance|nom f.|trust, confidence = faire confiance à (to trust)
+date|nom f.|date
+dix|num.|ten
+décembre|nom m.|December
+manque|nom m.|lack, shortage = manque de temps
+mode|nom m./f.|fashion (f.) = à la mode; way, method (m.) = mode de vie (lifestyle), mode d'emploi (instructions)
+novembre|nom m.|November
+plaisir|nom m.|pleasure = avec plaisir, faire plaisir à (to please)
+rencontre|nom f.|meeting, encounter; match (sport); aller à la rencontre de = to go to meet
+résultat|nom m.|result
+six|num.|six
+août|nom m.|August
+blanc|adj.|white = vin blanc; blank = page blanche
+classe|nom f.|class = en classe (at school); classroom; class (style) = avoir de la classe
+commencer|verbe|to begin, to start
+demain|adv.|tomorrow = à demain
+formation|nom f.|training, education = formation professionnelle; formation
+liste|nom f.|list
+photo|nom f.|photo = prendre une photo
+rôle|nom m.|role, part = jouer un rôle
+attention|nom f.|attention = faire attention (to be careful); careful! = attention !
+condition|nom f.|condition = à condition de (provided that); conditions de travail
+esprit|nom m.|mind = état d'esprit; spirit; wit
+espérer|verbe|to hope = j'espère que oui
+garde|nom f.|guard, care = être de garde (on duty), garde à vue (police custody), mettre en garde (to warn)
+internet|nom m.|internet = sur internet
+intérieur|adj.|inside, interior, domestic = politique intérieure; inside (nom m.) = à l'intérieur; ministère de l'Intérieur (Home Office)
+intérêt|nom m.|interest = d'intérêt général; advantage = avoir intérêt à (to be well advised to)
+mouvement|nom m.|movement = mouvement social (strike, protest)
+noir|adj.|black = en noir et blanc; dark = il fait noir
+origine|nom f.|origin = à l'origine (originally), d'origine française
+regarder|verbe|to look at, to watch = regarder la télé; to concern = ça ne te regarde pas
+rouge|adj.|red = le feu rouge
+auteur|nom m.|author, writer; perpetrator = l'auteur de l'attaque
+bonjour|interj.|hello, good morning
+février|nom m.|February
+justice|nom f.|justice; courts, legal system = la justice française
+langue|nom f.|language = langue maternelle; tongue
+occasion|nom f.|opportunity, chance = à l'occasion de (on the occasion of); second-hand = d'occasion
+offre|nom f.|offer = offre d'emploi (job offer); supply = l'offre et la demande
+perdre|verbe|to lose = perdre du temps (to waste time)
+qualité|nom f.|quality = de qualité
+risque|nom m.|risk = au risque de
+scène|nom f.|stage = sur scène; scene = mettre en scène (to stage, to direct)
+sinon|conj.|otherwise, or else; if not, except
+voici|prép.|here is, here are = voici mon frère
+cadre|nom m.|frame; setting, framework = dans le cadre de (as part of); executive, manager = un cadre supérieur
+changer|verbe|to change = changer d'avis (to change one's mind)
+libre|adj.|free = temps libre; vacant = cette place est libre ?
+production|nom f.|production
+vieux|adj.|old = un vieil ami, une vieille maison
+facile|adj.|easy
+image|nom f.|image, picture
+lien|nom m.|link; tie, bond = des liens familiaux
+mer|nom f.|sea = au bord de la mer, la mer Méditerranée
+sauf|prép.|except, but = tous sauf lui; safe (adj.) = sain et sauf
+source|nom f.|source; spring = eau de source
+troisième|adj.|third
+aider|verbe|to help
+campagne|nom f.|countryside = à la campagne; campaign = campagne électorale
+coupe|nom f.|cup (trophy) = la Coupe du monde; cut = coupe de cheveux; glass = une coupe de champagne
+cour|nom f.|court = Cour de cassation; yard, courtyard = dans la cour
+durant|prép.|during, for = durant trois ans
+objet|nom m.|object, thing; subject, purpose = faire l'objet de (to be the subject of)
+partout|adv.|everywhere
+plupart|nom f.|most = la plupart des gens; pour la plupart = mostly
+seconde|nom f.|second (time) = une seconde !
+valeur|nom f.|value = mettre en valeur (to highlight); values = les valeurs de la République
+étude|nom f.|study = faire des études (to study at university); survey, report = une étude publiée
+chacun|pron.|each one, everyone = chacun son tour
+cher|adj.|expensive = trop cher; dear = cher ami
+donnée|nom f.|data = les données personnelles
+hors|prép.|outside, out of = hors de la ville; hors de question (out of the question); except
+lequel|pron.|which, which one = lequel préfères-tu ?; which, who = la raison pour laquelle
+montre|nom f.|watch = une montre en or
+particulier|adj.|particular, specific = en particulier (especially); private = cours particuliers
+poste|nom m./f.|post, job (m.) = un poste de directeur; station (m.) = poste de police; post office (f.) = la Poste
+présent|adj.|present = être présent; present (time, nom m.) = à présent (now)
+réponse|nom f.|answer, reply, response
+réseau|nom m.|network = réseaux sociaux (social media)
+salle|nom f.|room, hall = salle de bains, salle de cinéma
+texte|nom m.|text
+appel|nom m.|call = faire appel à (to call on); appeal = faire appel; roll call
+contrôle|nom m.|control = sous contrôle; check, inspection = contrôle d'identité; test (school)
+message|nom m.|message
+position|nom f.|position = prendre position (to take a stand)
+république|nom f.|republic
+succès|nom m.|success = avec succès; hit = un grand succès
+économique|adj.|economic; economical
+activité|nom f.|activity; business, occupation
+américain|adj.|American
+association|nom f.|association, organization, charity
+carte|nom f.|card = carte bancaire; map = carte routière; menu = à la carte
+chercher|verbe|to look for, to search = chercher du travail; to fetch = aller chercher quelqu'un
+création|nom f.|creation; setting up = la création d'une entreprise
+euro|nom m.|euro
+expérience|nom f.|experience; experiment
+fonction|nom f.|function; post, office = la fonction publique (civil service); en fonction de = depending on
+impression|nom f.|impression = avoir l'impression que (to feel that); printing
+nature|nom f.|nature
+putain|interj.|damn!, bloody hell! (vulgar)
+simplement|adv.|simply, just
+travers|nom m.|through, across = à travers, au travers de; de travers = askew, wrong
+annonce|nom f.|announcement; advertisement = petites annonces (classified ads)
+arrêter|verbe|to stop = arrête !; to arrest = la police l'a arrêté; to quit = arrêter de fumer
+bientôt|adv.|soon = à bientôt (see you soon)
+chemin|nom m.|path, way = en chemin (on the way), chemin de fer (railway)
+demi|adj.|half = une demi-heure, deux heures et demie
+différent|adj.|different; various (before noun) = différentes raisons
+directeur|nom m.|director, manager, head; headteacher
+espace|nom m.|space = espace vert (park); area
+liberté|nom f.|freedom, liberty = en liberté
+mariage|nom m.|marriage; wedding
+organisation|nom f.|organization
+passage|nom m.|passage, way; passing, visit = de passage (passing through); crossing = passage piéton
+présence|nom f.|presence; attendance
+sein|nom m.|within = au sein de; breast
+zone|nom f.|zone, area
+économie|nom f.|economy; economics; savings = faire des économies
+bureau|nom m.|office = au bureau; desk
+compagnie|nom f.|company = en compagnie de; airline = compagnie aérienne
+entrer|verbe|to enter, to come in, to go in = entrer dans la maison
+moyenne|nom f.|average = en moyenne (on average)
+pied|nom m.|foot = à pied (on foot); bottom = au pied de
+presse|nom f.|press = la presse écrite; conférence de presse
+prise|nom f.|taking = prise de conscience (awareness), prise d'otages (hostage-taking); plug, socket
+réalité|nom f.|reality = en réalité (actually)
+social|adj.|social = réseaux sociaux; sécurité sociale
+sorte|nom f.|sort, kind = une sorte de; de sorte que = so that
+université|nom f.|university
+utiliser|verbe|to use
+œuvre|nom f.|work (of art, literature) = une œuvre d'art; mettre en œuvre = to implement
+accès|nom m.|access = accès à internet; fit, attack = un accès de colère
+commission|nom f.|commission, committee = Commission européenne; errand = faire des commissions
+dimanche|nom m.|Sunday
+départ|nom m.|departure, start = au départ (at first)
+lit|nom m.|bed = au lit; bed (river) = le lit de la Seine
+marier|verbe|to marry (off) = se marier (to get married)
+mauvais|adj.|bad = mauvais temps; wrong = le mauvais numéro
+numéro|nom m.|number = numéro de téléphone; issue (magazine)
+puisque|conj.|since, as, because
+soleil|nom m.|sun = au soleil
+taux|nom m.|rate = taux de chômage, taux d'intérêt
+travailler|verbe|to work
+acheter|verbe|to buy
+attendre|verbe|to wait (for) = attendre le bus; to expect = s'attendre à
+bras|nom m.|arm = bras dessus, bras dessous (arm in arm)
+charge|nom f.|load, burden; responsibility = prendre en charge (to take care of, to cover); charge (legal, battery)
+ex|nom m./f.|ex (former partner)
+finalement|adv.|finally, in the end; after all
+finir|verbe|to finish, to end = finir par (to end up)
+manger|verbe|to eat
+marque|nom f.|brand, make = une marque de vêtements; mark, sign
+pièce|nom f.|room = un appartement de trois pièces; piece, part; coin; play = pièce de théâtre
+pratique|adj.|practical, handy; practice (nom f.) = en pratique
+victoire|nom f.|victory, win
+vérité|nom f.|truth = à vrai dire (to tell the truth)
+ben|interj.|well (informal) = ben oui
+communauté|nom f.|community
+domaine|nom m.|field, area = dans le domaine de; estate = domaine viticole
+monsieur|nom m.|sir, Mr = Monsieur Dupont; gentleman, man = un vieux monsieur
+payer|verbe|to pay (for)
+peuple|nom m.|people, nation = le peuple français
+proche|adj.|close, near = proche de; relatives (nom m.pl.) = ses proches
+publier|verbe|to publish
+recevoir|verbe|to receive, to get; to host, to entertain = recevoir des amis
+répondre|verbe|to answer, to reply = répondre à une question
+administration|nom f.|administration; civil service
+auprès|adv.|with, next to = auprès de (with, to, close to)
+code|nom m.|code = code postal; highway code = le code de la route
+entendre|verbe|to hear; to mean, to intend; s'entendre = to get on
+gagner|verbe|to win; to earn = gagner sa vie (to earn a living); to gain
+honneur|nom m.|honour = en l'honneur de
+journal|nom m.|newspaper; news (TV) = le journal de 20 h; diary
+matière|nom f.|subject (school); matter, material = matières premières (raw materials); en matière de = as regards
+ouest|nom m.|west
+rapidement|adv.|quickly, rapidly
+retrouver|verbe|to find (again); to meet (up with) = se retrouver (to meet)
+sept|num.|seven
+soirée|nom f.|evening; party = une soirée chez Marie
+sol|nom m.|ground, floor; soil
+sport|nom m.|sport = faire du sport (to exercise)
+téléphone|nom m.|telephone, phone
+version|nom f.|version = en version originale (subtitled)
+arme|nom f.|weapon = arme à feu
+construction|nom f.|construction, building
+double|adj.|double; double (nom m.) = le double (twice as much)
+information|nom f.|information; news = les informations
+midi|nom m.|noon, midday; lunchtime; the South of France = le Midi
+mission|nom f.|mission, assignment
+moitié|nom f.|half = à moitié (half)
+page|nom f.|page = à la page (up to date)
+particulièrement|adv.|particularly, especially
+prochain|adj.|next = la semaine prochaine; à la prochaine ! (see you!)
+prêt|adj.|ready = prêt à partir; loan (nom m.) = un prêt immobilier
+technique|adj.|technical; technique (nom f.)
+union|nom f.|union = Union européenne
+voyage|nom m.|journey, trip = bon voyage, en voyage
+énergie|nom f.|energy; power
+éviter|verbe|to avoid
+bord|nom m.|edge, side = au bord de la mer; à bord = on board
+combien|adv.|how much, how many = combien ça coûte ?
+continuer|verbe|to continue, to go on
+contraire|adj.|opposite, contrary; au contraire = on the contrary
+courant|adj.|common, everyday = la vie courante; current (nom m.) = être au courant (to know); power = le courant
+faute|nom f.|mistake = faute d'orthographe; fault = c'est ma faute; foul; faute de = for lack of
+finale|nom f.|final (sport) = la finale de la Coupe
+heureux|adj.|happy = heureux anniversaire
+impossible|adj.|impossible
+joueur|nom m.|player
+nécessaire|adj.|necessary
+samedi|nom m.|Saturday
+sang|nom m.|blood
+second|adj.|second = Seconde Guerre mondiale
+style|nom m.|style
+sérieux|adj.|serious = c'est sérieux ?; reliable
+terrain|nom m.|ground, land, plot; pitch, field = terrain de foot; sur le terrain = on the ground, in the field
+église|nom f.|church
+créer|verbe|to create; to set up = créer une entreprise
+décision|nom f.|decision = prendre une décision
+défense|nom f.|defence = ministère de la Défense; ban = défense de fumer
+désormais|adv.|from now on, henceforth
+frais|adj.|fresh = air frais; cool = au frais (in a cool place); costs (nom m.pl.) = les frais
+hôtel|nom m.|hotel; town hall = hôtel de ville; mansion = hôtel particulier
+instant|nom m.|moment, instant = pour l'instant (for now)
+majorité|nom f.|majority
+modèle|nom m.|model; example, pattern
+obtenir|verbe|to get, to obtain
+outre|prép.|besides, in addition to; en outre = moreover; outre-mer = overseas
+paix|nom f.|peace
+rappeler|verbe|to remind = cela me rappelle…; to call back; se rappeler = to remember
+solution|nom f.|solution
+tandis|conj.|while, whereas = tandis que
+actuellement|adv.|currently, at present (not "actually")
+assemblée|nom f.|assembly = Assemblée nationale (French parliament)
+bande|nom f.|gang, group = une bande d'amis; strip, band; bande dessinée = comic
+commune|nom f.|municipality, town
+contrat|nom m.|contract
+faux|adj.|false, wrong; fake = faux billets
+international|adj.|international
+note|nom f.|note = prendre des notes; mark, grade; bill
+suffire|verbe|to be enough = ça suffit !
+total|adj.|total, complete; total (nom m.) = au total (in all)
+tôt|adv.|early = tôt le matin; plus tôt = earlier, sooner; tôt ou tard = sooner or later
+vol|nom m.|flight = un vol pour Paris; theft = vol à main armée (armed robbery)
+élément|nom m.|element, component; piece of evidence
+avenir|nom m.|future = à l'avenir (in future)
+critique|adj.|critical = un moment critique; criticism, review (nom f.) = une critique de film; critic (nom m./f.)
+dehors|adv.|outside, outdoors = dîner dehors; en dehors de = apart from, outside
+directement|adv.|directly, straight
+discours|nom m.|speech = prononcer un discours; discourse
+dur|adj.|hard = un travail dur; tough, harsh
+expliquer|verbe|to explain
+fête|nom f.|party = faire la fête; holiday, festival = fête nationale; name day
+maître|nom m.|master; teacher (primary) = maître d'école; owner; maître de conférences = senior lecturer
+personnel|adj.|personal; staff (nom m.) = le personnel soignant
+preuve|nom f.|proof, evidence = faire preuve de (to show)
+prison|nom f.|prison = en prison
+proposer|verbe|to offer, to suggest, to propose
+vendredi|nom m.|Friday
+éducation|nom f.|education; upbringing, manners = l'Éducation nationale (state education system)
+adresse|nom f.|address = adresse e-mail; skill, dexterity
+apprendre|verbe|to learn = apprendre le français; to teach = apprendre à quelqu'un; to hear, to find out = apprendre une nouvelle
+attaque|nom f.|attack = attaque terroriste
+avance|nom f.|advance, lead = en avance (early), à l'avance (in advance)
+ceci|pron.|this = ceci dit (that said)
+court|adj.|short = à court terme; court (nom m.) = court de tennis
+dos|nom m.|back = mal au dos
+endroit|nom m.|place, spot = à cet endroit; right side = à l'endroit
+essayer|verbe|to try = essayer de faire; to try on = essayer une robe
+exactement|adv.|exactly
+grave|adj.|serious = un accident grave; deep (voice); c'est pas grave = it doesn't matter
+huit|num.|eight
+lumière|nom f.|light = la lumière du jour
+média|nom m.|medium; the media = les médias
+régime|nom m.|regime = régime politique; diet = être au régime; scheme = régime de retraite
+toutefois|adv.|however, nevertheless
+arrière|nom m.|back, rear = à l'arrière; en arrière = backwards
+commerce|nom m.|trade, commerce = commerce extérieur; shop = petits commerces
+complètement|adv.|completely
+habitant|nom m.|inhabitant, resident = 10 000 habitants
+physique|adj.|physical; physics (nom f.)
+quartier|nom m.|neighbourhood, district = un quartier populaire; quarter
+territoire|nom m.|territory
+unique|adj.|only, single = fils unique; unique
+vente|nom f.|sale, selling = en vente (on sale)
+via|prép.|via, through
+changement|nom m.|change = changement climatique
+concernant|prép.|concerning, regarding
+cul|nom m.|arse, bum (vulgar)
+européen|adj.|European = Union européenne
+lettre|nom f.|letter = une lettre recommandée; arts (pl.) = faculté des lettres
+parole|nom f.|word, speech = prendre la parole (to speak); lyrics = les paroles; promise = donner sa parole
+principe|nom m.|principle = en principe (in theory)
+radio|nom f.|radio = à la radio; X-ray
+relation|nom f.|relationship, relation = en relation avec; relations = relations internationales
+règle|nom f.|rule = en règle générale; ruler; period (pl.) = les règles
+table|nom f.|table = à table !
+valoir|verbe|to be worth = ça vaut le coup; il vaut mieux = it's better to
+édition|nom f.|edition; publishing = maison d'édition
+élection|nom f.|election = élection présidentielle
+analyse|nom f.|analysis; test = analyse de sang
+assurer|verbe|to assure, to ensure = assurer la sécurité; to insure; s'assurer que = to make sure that
+carrière|nom f.|career; quarry
+commun|adj.|common, shared = en commun (in common); transports en commun (public transport)
+couleur|nom f.|colour = en couleur
+durée|nom f.|duration, length = à durée indéterminée (permanent)
+erreur|nom f.|mistake, error = par erreur
+espèce|nom f.|species = espèce menacée; kind, sort = une espèce de; cash = en espèces
+faible|adj.|weak; low, small = un faible taux
+large|adj.|wide, broad = une large majorité; generous; open sea (nom m.) = au large
+lundi|nom m.|Monday
+ministère|nom m.|ministry = ministère de l'Intérieur
+neuf|adj.|new = tout neuf; nine (num.) = neuf ans
+objectif|nom m.|aim, objective, target; lens (camera); objective (adj.)
+pro|nom m.|pro, professional (informal) = un pro
+probablement|adv.|probably
+respect|nom m.|respect
+responsable|adj.|responsible = responsable de; person in charge, official (nom m./f.) = un responsable politique
+secteur|nom m.|sector, area
+soutien|nom m.|support = en soutien à
+vacance|nom f.|holidays (plural) = les vacances, en vacances; vacancy
+con|adj.|stupid, idiotic (vulgar) = c'est con; idiot (nom m.)
+concours|nom m.|competition, contest; competitive exam = passer un concours
+couple|nom m.|couple = en couple
+course|nom f.|race = course à pied; errand = faire les courses (to go shopping); course (path)
+différence|nom f.|difference = à la différence de (unlike)
+décider|verbe|to decide = décider de faire
+fou|adj.|mad, crazy = devenir fou; huge = un succès fou
+gestion|nom f.|management = gestion de crise
+juge|nom m.|judge = juge d'instruction (examining magistrate)
+mètre|nom m.|metre
+normal|adj.|normal = c'est normal (it's natural, of course)
+ouverture|nom f.|opening = heures d'ouverture; openness
+poids|nom m.|weight = prendre du poids
+réussir|verbe|to succeed, to manage = réussir à faire; to pass = réussir un examen
+servir|verbe|to serve; to be used for = servir à (to be used for), ça sert à quoi ?; se servir de = to use
+suivant|adj.|following, next = le jour suivant; according to (prép.) = suivant les cas
+taille|nom f.|size = de grande taille; height; waist
+village|nom m.|village
+visite|nom f.|visit = rendre visite à (to visit someone)
+absolument|adv.|absolutely
+bref|adj.|brief, short; in short (adv.) = bref, …
+ciel|nom m.|sky; heaven
+clair|adj.|clear = c'est clair; light (colour) = bleu clair
+combat|nom m.|fight, combat = le combat contre le cancer
+comité|nom m.|committee
+mémoire|nom f.|memory = de mémoire; dissertation (nom m.) = un mémoire de master
+ouvrir|verbe|to open
+protection|nom f.|protection
+signe|nom m.|sign = en signe de; signal
+suisse|adj.|Swiss
+album|nom m.|album
+cinéma|nom m.|cinema = aller au cinéma; film industry
+crise|nom f.|crisis = crise économique; attack, fit = crise cardiaque
+garder|verbe|to keep = garder le silence; to look after = garder des enfants
+généralement|adv.|generally, usually
+historique|adj.|historic, historical
+industrie|nom f.|industry
+maladie|nom f.|illness, disease
+militaire|adj.|military; soldier (nom m.)
+mondial|adj.|world, global = la guerre mondiale, la Coupe du monde
+médecin|nom m.|doctor = médecin généraliste (GP)
+soi|pron.|oneself = chez soi (at home); cela va de soi = it goes without saying
+vote|nom m.|vote, voting
+écouter|verbe|to listen (to)
+île|nom f.|island
+animal|nom m.|animal
+application|nom f.|app, application; implementation = l'application de la loi
+banque|nom f.|bank
+chanson|nom f.|song
+département|nom m.|department (French administrative area); department (university, company)
+environnement|nom m.|environment
+ferme|adj.|firm; farm (nom f.) = à la ferme
+final|adj.|final
+opération|nom f.|operation
+parc|nom m.|park = parc national
+poser|verbe|to put (down) = pose-le là; to ask = poser une question; to pose
+seigneur|nom m.|lord = le Seigneur
+traitement|nom m.|treatment; processing = traitement des données; salary (civil servant)
+visage|nom m.|face
+véritable|adj.|real, true, genuine
+avion|nom m.|plane = en avion
+calme|adj.|calm, quiet; calm (nom m.) = garder son calme
+chien|nom m.|dog
+cool|adj.|cool (informal)
+enquête|nom f.|investigation, inquiry = ouvrir une enquête; survey
+envoyer|verbe|to send
+ligue|nom f.|league = Ligue des champions
+limite|nom f.|limit = sans limite; limite d'âge; deadline = date limite
+parfait|adj.|perfect
+port|nom m.|port, harbour; wearing = port du masque
+professeur|nom m.|teacher = professeur de français; professor
+transport|nom m.|transport = transports en commun (public transport)
+vitesse|nom f.|speed = à toute vitesse; gear (car)
+étranger|adj.|foreign = langue étrangère; foreigner (nom m.); abroad = à l'étranger
+cheveu|nom m.|hair (one) = les cheveux (hair)
+dollar|nom m.|dollar
+dossier|nom m.|file, case, matter = un dossier sensible; folder; back (of a chair)
+hiver|nom m.|winter = en hiver
+hôpital|nom m.|hospital
+importance|nom f.|importance = d'importance
+lutte|nom f.|fight, struggle = la lutte contre le terrorisme; wrestling
+marine|nom f.|navy; seascape; navy blue (adj.)
+pression|nom f.|pressure; draught beer = une pression
+puissance|nom f.|power = grande puissance
+religion|nom f.|religion
+stade|nom m.|stadium; stage = à ce stade
+théâtre|nom m.|theatre = pièce de théâtre
+volonté|nom f.|will = bonne volonté
+élève|nom m./f.|pupil, student
+évolution|nom f.|development, change; evolution
+adorer|verbe|to love, to adore
+camp|nom m.|camp; side = changer de camp
+drôle|adj.|funny; odd, strange = drôle de (strange)
+débat|nom m.|debate, discussion
+oublier|verbe|to forget
+pauvre|adj.|poor = les pays pauvres; poor (pitiful, before noun) = le pauvre homme
+regard|nom m.|look, gaze = au regard de (with regard to)
+représenter|verbe|to represent; to depict
+rêve|nom m.|dream
+science|nom f.|science = sciences politiques
+souhaiter|verbe|to wish = souhaiter bonne chance; to hope
+touche|nom f.|key (keyboard, piano); touch = une touche de couleur; touchline
+utilisation|nom f.|use
+étudiant|nom m.|student
+absence|nom f.|absence; lack
+capable|adj.|capable, able = capable de
+cité|nom f.|city; housing estate = les cités
+client|nom m.|customer, client
+connaissance|nom f.|knowledge = à ma connaissance; acquaintance = faire la connaissance de (to meet)
+delà|adv.|beyond = au-delà de
+habitude|nom f.|habit = d'habitude (usually), comme d'habitude
+principal|adj.|main, principal
+royaume|nom m.|kingdom = Royaume-Uni
+russe|adj.|Russian
+référence|nom f.|reference
+secret|adj.|secret; secret (nom m.)
+top|adj.|great, top (informal); top (nom m.) = au top
+totalement|adv.|totally, completely
+usage|nom m.|use = à usage unique (disposable); usage, custom
+émission|nom f.|programme, show (TV, radio); emission = émissions de CO2
+chaîne|nom f.|channel (TV) = chaîne d'info; chain; production line
+chinois|adj.|Chinese
+classique|adj.|classic, classical; usual
+concerner|verbe|to concern = en ce qui concerne (as regards)
+contact|nom m.|contact = en contact avec
+dame|nom f.|lady
+direct|adj.|direct; live (nom m.) = en direct (live)
+divers|adj.|various, diverse = faits divers (news in brief, crime stories)
+envers|prép.|towards, to = son attitude envers moi; back (nom m.) = à l'envers (upside down, inside out)
+expression|nom f.|expression; phrase
+facilement|adv.|easily
+fer|nom m.|iron = chemin de fer (railway)
+fil|nom m.|thread; wire; au fil de = in the course of
+froid|adj.|cold = il fait froid
+futur|adj.|future; future (nom m.)
+gaz|nom m.|gas = gaz naturel
+malade|adj.|ill, sick = tomber malade; patient (nom m./f.)
+pareil|adj.|the same, similar = c'est pareil; such = une chose pareille
+privé|adj.|private = vie privée
+procès|nom m.|trial = le procès de…
+rapide|adj.|fast, quick
+réunion|nom f.|meeting; reunion
+révolution|nom f.|revolution
+tableau|nom m.|painting = un tableau de Monet; board = tableau noir; table, chart
+tendance|nom f.|trend, tendency = avoir tendance à (to tend to)
+vingt|num.|twenty
+atteindre|verbe|to reach, to achieve = atteindre un objectif; to affect = atteint d'un cancer
+boulot|nom m.|job, work (informal)
+bébé|nom m.|baby
+choisir|verbe|to choose
+communication|nom f.|communication
+côte|nom f.|coast = la Côte d'Azur; rib; slope; côte à côte = side by side
+goût|nom m.|taste = de bon goût
+humain|adj.|human = les droits humains; human being (nom m.)
+madame|nom f.|madam, Mrs = Madame Dupont
+parlement|nom m.|parliament
+peau|nom f.|skin
+surface|nom f.|surface; area = grande surface (supermarket)
+uniquement|adv.|only, solely
+vendre|verbe|to sell = à vendre (for sale)
+victime|nom f.|victim
+épisode|nom m.|episode
+évidemment|adv.|obviously, of course
+allemand|adj.|German
+arrêt|nom m.|stop = arrêt de bus; stopping, halt = sans arrêt (non-stop); ruling (court)
+avocat|nom m.|lawyer; avocado
+bonheur|nom m.|happiness; par bonheur = luckily
+budget|nom m.|budget
+caractère|nom m.|character, nature; character (letter)
+consommation|nom f.|consumption = consommation d'énergie; drink (in a bar)
+dedans|adv.|inside, in it
+découvrir|verbe|to discover, to find out
+enseignement|nom m.|teaching, education = enseignement supérieur (higher education)
+lendemain|nom m.|the next day, the day after = le lendemain matin
+magnifique|adj.|magnificent, superb
+mari|nom m.|husband
+musée|nom m.|museum
+populaire|adj.|popular; working-class = un quartier populaire
+prince|nom m.|prince
+province|nom f.|province; the provinces (outside Paris) = en province
+rentrer|verbe|to go home, to come back = rentrer chez soi; to go in
+ressource|nom f.|resource = ressources humaines
+retraite|nom f.|retirement = à la retraite (retired); pension = réforme des retraites; retreat (military)
+sac|nom m.|bag = sac à dos (backpack)
+secrétaire|nom m./f.|secretary = secrétaire général
+siège|nom m.|seat; headquarters = siège social; siege
+supérieur|adj.|higher, upper, superior = enseignement supérieur
+surprise|nom f.|surprise
+vent|nom m.|wind
+acte|nom m.|act, action; deed (legal) = acte de naissance
+bouche|nom f.|mouth
+capacité|nom f.|capacity, ability
+capitale|nom f.|capital (city) = Paris, capitale de la France
+centrale|nom f.|power station = centrale nucléaire
+chaud|adj.|hot, warm = il fait chaud
+contexte|nom m.|context
+dessous|adv.|underneath, below = au-dessous de, en dessous de (below)
+extérieur|adj.|outside, external, foreign = politique extérieure; outside (nom m.) = à l'extérieur
+gueule|nom f.|mouth (of an animal); face, mug (vulgar) = ta gueule ! (shut up!); avoir la gueule de bois = to have a hangover
+hauteur|nom f.|height = à la hauteur de (level with, up to)
+naissance|nom f.|birth = date de naissance
+naître|verbe|to be born = je suis né en 1990
+opposition|nom f.|opposition = l'opposition (political)
+processus|nom m.|process
+rencontrer|verbe|to meet
+rire|verbe|to laugh = mourir de rire; laughter (nom m.)
+réaliser|verbe|to carry out, to achieve = réaliser un projet; to direct (a film); to realize (understand)
+salut|interj.|hi!, bye! (informal); salvation, safety (nom m.)
+sœur|nom f.|sister
+vin|nom m.|wine = vin rouge
+actuel|adj.|current, present (not "actual") = le président actuel
+approche|nom f.|approach
+candidat|nom m.|candidate
+capitaine|nom m.|captain
+désoler|verbe|to upset; sorry (désolé) = je suis désolé
+faveur|nom f.|favour = en faveur de (in favour of)
+front|nom m.|forehead; front = le front populaire
+mérite|nom m.|merit, credit
+noël|nom m.|Christmas = joyeux Noël
+papier|nom m.|paper; papers (ID) = vos papiers
+prévu|adj.|planned, expected = comme prévu
+tribunal|nom m.|court = tribunal correctionnel
+télé|nom f.|TV, telly = à la télé
+accident|nom m.|accident = accident de la route
+courage|nom m.|courage, bravery = bon courage ! (good luck!)
+festival|nom m.|festival = festival de Cannes
+jeudi|nom m.|Thursday
+journaliste|nom m./f.|journalist
+nul|adj.|useless, rubbish (informal) = c'est nul; no, not any = nulle part (nowhere); match nul (draw)
+perte|nom f.|loss = pertes humaines; waste = perte de temps
+possibilité|nom f.|possibility
+riche|adj.|rich
+tuer|verbe|to kill
+unité|nom f.|unit; unity
+établissement|nom m.|establishment, institution = établissement scolaire (school)
+anniversaire|nom m.|birthday = joyeux anniversaire; anniversary
+café|nom m.|coffee; café = au café
+chat|nom m.|cat; chat (online)
+chiffre|nom m.|figure, number = les chiffres du chômage; chiffre d'affaires = turnover
+coin|nom m.|corner = au coin de la rue; area = dans le coin (around here)
+identité|nom f.|identity = carte d'identité
+intéressant|adj.|interesting
+lancer|verbe|to launch = lancer un projet; to throw
+largement|adv.|widely, largely; easily = il a largement le temps
+parcours|nom m.|route, course; career path
+parfaitement|adv.|perfectly
+partage|nom m.|sharing, division
+pont|nom m.|bridge; long weekend = faire le pont
+protéger|verbe|to protect
+préférer|verbe|to prefer
+remettre|verbe|to put back; to hand over = remettre un prix; to postpone = remettre à plus tard; remettre en cause = to question
+responsabilité|nom f.|responsibility; liability
+scientifique|adj.|scientific; scientist (nom m./f.)
+somme|nom f.|sum, amount = une somme d'argent; en somme = in short; nap (nom m.) = faire un somme
+tirer|verbe|to pull; to shoot = tirer sur; to draw = tirer au sort; s'en tirer = to manage, to get away with it
+violence|nom f.|violence
+voire|adv.|or even, indeed = des mois, voire des années
+élever|verbe|to raise, to bring up = élever des enfants; s'élever à = to amount to
+beauté|nom f.|beauty
+bleu|adj.|blue; bruise (nom m.)
+champ|nom m.|field = champ de blé; field, scope
+conférence|nom f.|conference; lecture = conférence de presse
+cuisine|nom f.|kitchen; cooking, cuisine = faire la cuisine (to cook)
+danger|nom m.|danger = en danger
+député|nom m.|member of parliament, MP
+foi|nom f.|faith = de bonne foi
+football|nom m.|football, soccer
+lycée|nom m.|secondary school, high school
+mercredi|nom m.|Wednesday
+milliard|num.|billion = un milliard d'euros
+opinion|nom f.|opinion = l'opinion publique
+participer|verbe|to take part, to participate = participer à
+personnage|nom m.|character (in a story); figure, personality
+planète|nom f.|planet
+québécois|adj.|from Quebec, Quebecer
+retard|nom m.|delay = en retard (late)
+sexe|nom m.|sex; genitals
+situer|verbe|to locate, to place = se situer (to be located)
+théorie|nom f.|theory = en théorie
+verre|nom m.|glass = un verre de vin; prendre un verre = to have a drink
+agence|nom f.|agency = agence de voyages; branch
+artiste|nom m./f.|artist; performer
+assurance|nom f.|insurance; confidence; assurance
+autorité|nom f.|authority = les autorités
+boire|verbe|to drink
+certainement|adv.|certainly, surely; probably
+citoyen|nom m.|citizen
+clairement|adv.|clearly
+collection|nom f.|collection
+conscience|nom f.|consciousness, awareness = prendre conscience de (to become aware of); conscience
+content|adj.|happy, pleased = content de
+croissance|nom f.|growth = croissance économique
+célèbre|adj.|famous
+davantage|adv.|more = davantage de temps
+distance|nom f.|distance = à distance (remotely)
+détail|nom m.|detail = en détail; retail = vente au détail
+entier|adj.|whole, entire = le monde entier; en entier = in full
+exposition|nom f.|exhibition = une exposition au musée; exposure
+extrême|adj.|extreme = l'extrême droite
+figure|nom f.|face; figure = une grande figure de; faire figure de = to look like, to be seen as
+imaginer|verbe|to imagine
+influence|nom f.|influence
+lecture|nom f.|reading (not "lecture")
+maman|nom f.|mum, mom
+masse|nom f.|mass = en masse; heap = des masses de
+moderne|adj.|modern
+mur|nom m.|wall
+néanmoins|adv.|nevertheless, however
+propriétaire|nom m./f.|owner; landlord
+propriété|nom f.|property, estate; ownership
+quitter|verbe|to leave = quitter Paris; ne quittez pas = hold the line
+quotidien|adj.|daily, everyday = la vie quotidienne; daily newspaper (nom m.)
+soldat|nom m.|soldier
+triste|adj.|sad
+vert|adj.|green; the Greens (nom m.pl.) = les Verts
+vide|adj.|empty; vacuum, void (nom m.)
+âme|nom f.|soul
+échange|nom m.|exchange = en échange de
+élu|nom m.|elected official, councillor; elected (adj.)
+énorme|adj.|huge, enormous
+événement|nom m.|event
+bizarre|adj.|strange, odd, weird
+catégorie|nom f.|category
+contenu|nom m.|content
+dommage|nom m.|pity = c'est dommage (what a shame); damage = dommages et intérêts
+empire|nom m.|empire
+entièrement|adv.|entirely, completely
+espoir|nom m.|hope
+existence|nom f.|existence, life
+exploitation|nom f.|exploitation; farm, operation = exploitation agricole
+malheureusement|adv.|unfortunately
+mardi|nom m.|Tuesday
+offrir|verbe|to offer; to give (as a present) = offrir des fleurs
+religieux|adj.|religious
+réserve|nom f.|reserve, stock; reservation = sous réserve de (subject to)
+section|nom f.|section
+sentir|verbe|to smell; to feel = se sentir bien (to feel well)
+signifier|verbe|to mean
+spectacle|nom m.|show, performance
+appareil|nom m.|device, appliance = appareil photo (camera); aircraft
+britannique|adj.|British
+chargé|adj.|loaded, busy = une journée chargée; in charge of = chargé de
+château|nom m.|castle; château (wine estate)
+crédit|nom m.|credit; loan
+don|nom m.|gift, talent; donation = don d'organes
+empêcher|verbe|to prevent, to stop = empêcher de; n'empêche que = all the same
+entretien|nom m.|interview = entretien d'embauche; maintenance, upkeep
+immédiatement|adv.|immediately
+incroyable|adj.|incredible, unbelievable
+jeunesse|nom f.|youth
+machine|nom f.|machine = machine à laver
+méthode|nom f.|method
+naturel|adj.|natural
+revue|nom f.|magazine, journal; review
+rose|adj.|pink; rose (nom f.)
+salon|nom m.|living room; fair, show = Salon du livre
+silence|nom m.|silence
+sympa|adj.|nice, friendly (informal)
+traité|nom m.|treaty = traité de Rome
+univers|nom m.|universe; world
+vice|nom m.|vice; vice- = vice-président
+vision|nom f.|vision, view; eyesight
+écran|nom m.|screen = à l'écran
+acteur|nom m.|actor; player, stakeholder = les acteurs économiques
+augmentation|nom f.|increase, rise = augmentation des prix
+bruit|nom m.|noise; rumour = le bruit court que
+classement|nom m.|ranking, classification; league table
+conseiller|nom m.|adviser, counsellor; councillor = conseiller municipal; to advise (verbe)
+docteur|nom m.|doctor
+franchement|adv.|frankly, honestly
+génération|nom f.|generation
+héros|nom m.|hero
+raconter|verbe|to tell = raconter une histoire
+reine|nom f.|queen
+rejoindre|verbe|to join, to meet up with
+ressembler|verbe|to look like, to resemble = ressembler à
+roman|nom m.|novel = premier roman
+régulièrement|adv.|regularly
+star|nom f.|star (celebrity)
+structure|nom f.|structure
+tiers|nom m.|third = un tiers; third party
+étape|nom f.|stage, step = étape par étape; stop
+ajouter|verbe|to add
+avantage|nom m.|advantage, benefit
+bataille|nom f.|battle
+boîte|nom f.|box, tin = boîte aux lettres; company (informal); nightclub = en boîte
+capital|adj.|crucial, major; capital (nom m.) = capital social
+certes|adv.|certainly, admittedly = certes, mais…
+cheval|nom m.|horse = à cheval
+dangereux|adj.|dangerous
+danse|nom f.|dance, dancing
+document|nom m.|document
+défendre|verbe|to defend; to forbid = défendre de
+exercice|nom m.|exercise; financial year
+institut|nom m.|institute
+intervention|nom f.|intervention; operation (surgery); speech
+local|adj.|local; premises (nom m.) = les locaux
+logique|adj.|logical; logic (nom f.)
+millier|nom m.|thousand = des milliers de personnes
+monter|verbe|to go up, to climb = monter l'escalier; to get on = monter dans le train; to set up = monter une entreprise
+palais|nom m.|palace = palais de justice (law courts); palate
+principalement|adv.|mainly, chiefly
+reprendre|verbe|to take back; to resume, to start again = reprendre le travail; to take over
+revoir|verbe|to see again = au revoir; to review, to revise
+récemment|adv.|recently
+sentiment|nom m.|feeling
+soin|nom m.|care = prendre soin de; treatment (pl.) = les soins (medical care)
+statistique|nom f.|statistic(s)
+statut|nom m.|status; statutes (pl.)
+sélection|nom f.|selection; national team
+maire|nom m.|mayor
+central|adj.|central = Amérique centrale
+sûrement|adv.|surely, certainly; probably
+tenter|verbe|to try, to attempt = tenter de; to tempt
+vivant|adj.|alive, living; lively
+baisse|nom f.|fall, drop, decrease = en baisse (falling)
+collège|nom m.|secondary school (ages 11-15); college = Collège de France
+construire|verbe|to build
+domicile|nom m.|home, residence = à domicile (at home)
+effort|nom m.|effort = faire un effort
+employé|nom m.|employee = employé de bureau
+examen|nom m.|exam = passer un examen; examination, test
+moteur|nom m.|engine, motor; driving force = moteur de la croissance; search engine = moteur de recherche
+officiel|adj.|official
+ouvrage|nom m.|work, book = un ouvrage sur l'histoire
+partager|verbe|to share
+participation|nom f.|participation; turnout = le taux de participation
+patron|nom m.|boss, employer; owner
+posséder|verbe|to own, to possess
+préparer|verbe|to prepare = préparer le dîner; to prepare for = préparer un examen
+réduction|nom f.|reduction, cut; discount
+réel|adj.|real
+réforme|nom f.|reform = réforme des retraites
+souvenir|nom m.|memory = un bon souvenir; souvenir; se souvenir de (verbe) = to remember
+test|nom m.|test
+utile|adj.|useful
+achat|nom m.|purchase = faire des achats (to go shopping)
+bâtiment|nom m.|building; construction industry
+cerveau|nom m.|brain
+civil|adj.|civil, civilian = la société civile; civilian (nom m.)
+commentaire|nom m.|comment; commentary
+concept|nom m.|concept
+disposition|nom f.|provision, measure = les dispositions de la loi; à la disposition de = available to
+fortement|adv.|strongly, greatly
+indépendance|nom f.|independence
+justement|adv.|precisely, exactly = c'est justement le problème; rightly
+matériel|nom m.|equipment = matériel informatique; material (adj.)
+montant|nom m.|amount, sum = le montant total
+nation|nom f.|nation = les Nations unies
+nommer|verbe|to appoint = nommé ministre; to name, to call
+paraître|verbe|to seem, to appear = il paraît que (apparently); to be published = vient de paraître
+quatrième|adj.|fourth
+réaction|nom f.|reaction
+réduire|verbe|to reduce, to cut
+sourire|verbe|to smile; smile (nom m.)
+tourner|verbe|to turn = tourner à gauche; to shoot (film) = tourner un film; to go round
+alcool|nom m.|alcohol
+autrement|adv.|otherwise, differently = autrement dit (in other words)
+battre|verbe|to beat = battre un record; to fight = se battre
+coût|nom m.|cost = le coût de la vie
+disponible|adj.|available
+fleur|nom f.|flower
+indiquer|verbe|to indicate, to show, to point out
+intention|nom f.|intention = avoir l'intention de (to intend to)
+jardin|nom m.|garden
+lac|nom m.|lake
+obliger|verbe|to oblige, to force = être obligé de (to have to)
+patrimoine|nom m.|heritage = patrimoine mondial; estate, assets
+phase|nom f.|phase, stage
+rare|adj.|rare
+séance|nom f.|session, sitting; showing (film)
+urgence|nom f.|emergency = en urgence; les urgences = A&E, emergency room
+accepter|verbe|to accept, to agree = accepter de
+agent|nom m.|agent; officer = agent de police
+agriculture|nom f.|agriculture, farming
+améliorer|verbe|to improve
+auto|nom f.|car (informal)
+cancer|nom m.|cancer
+championnat|nom m.|championship = championnat de France
+chasse|nom f.|hunting = la chasse; hunt, chase; chasse d'eau = toilet flush
+complet|adj.|complete; full = c'est complet (sold out)
+complexe|adj.|complex, complicated; complex (nom m.)
+concert|nom m.|concert
+constitution|nom f.|constitution
+déclaration|nom f.|statement, declaration
+développer|verbe|to develop
+forcément|adv.|necessarily, inevitably = pas forcément (not necessarily)
+gérer|verbe|to manage, to handle
+heureusement|adv.|fortunately, luckily
+impact|nom m.|impact
+inscrire|verbe|to register, to enrol = s'inscrire à; to write down
+joie|nom f.|joy
+lesquels|pron.|which (ones) = parmi lesquels (among which)
+métier|nom m.|job, trade, profession
+nez|nom m.|nose
+occuper|verbe|to occupy; s'occuper de = to take care of, to deal with
+profiter|verbe|to make the most of, to enjoy = profiter de; to benefit
+revanche|nom f.|revenge; return match; en revanche = on the other hand
+sauver|verbe|to save, to rescue
+scolaire|adj.|school = année scolaire
+spécial|adj.|special
+troupe|nom f.|troops (pl.) = les troupes; company (theatre)
+télévision|nom f.|television
+accueil|nom m.|welcome, reception = l'accueil des réfugiés; reception desk
+bordel|nom m.|mess (informal) = quel bordel !; brothel
+cadeau|nom m.|present, gift
+cent|num.|hundred = cent euros; cent (nom m.) = pour cent (per cent)
+colère|nom f.|anger = en colère (angry)
+dormir|verbe|to sleep
+dépendre|verbe|to depend = ça dépend de
+excellent|adj.|excellent
+foutre|verbe|to do, to put (vulgar) = qu'est-ce que tu fous ?; je m'en fous = I don't give a damn
+hasard|nom m.|chance = par hasard (by chance)
+jaune|adj.|yellow = gilets jaunes
+joli|adj.|pretty, nice
+longueur|nom f.|length
+minimum|nom m.|minimum = au minimum
+musulman|adj.|Muslim
+numérique|adj.|digital = le numérique (digital technology)
+phrase|nom f.|sentence (not "phrase")
+pointe|nom f.|tip, point; peak = heure de pointe (rush hour); de pointe = cutting-edge
+professionnel|adj.|professional
+proposition|nom f.|proposal, offer, suggestion
+publication|nom f.|publication
+secours|nom m.|help, rescue = au secours ! (help!); emergency services = les secours
+sommet|nom m.|summit = sommet du G7; top, peak
+électrique|adj.|electric = voiture électrique
+œil|nom m.|eye (pl. yeux) = jeter un coup d'œil (to glance)
+arabe|adj.|Arab, Arabic
+augmenter|verbe|to increase, to rise
+bar|nom m.|bar
+blague|nom f.|joke
+champion|nom m.|champion
+chute|nom f.|fall = la chute du mur de Berlin; drop
+compétition|nom f.|competition
+crime|nom m.|crime; murder
+croix|nom f.|cross = la Croix-Rouge
+description|nom f.|description
+difficulté|nom f.|difficulty = en difficulté (in trouble)
+dépense|nom f.|expense, spending = dépenses publiques
+efficace|adj.|effective, efficient
+fiche|nom f.|form, card, file
+garçon|nom m.|boy; waiter
+interdit|adj.|forbidden, banned = interdit de fumer
+issue|nom f.|outcome = à l'issue de (at the end of); exit = issue de secours
+juif|adj.|Jewish
+mille|num.|thousand = mille euros
+pain|nom m.|bread = pain au chocolat
+repas|nom m.|meal
+résistance|nom f.|resistance = la Résistance
+soutenir|verbe|to support; to maintain, to claim
+terminer|verbe|to finish, to end
+vêtement|nom m.|piece of clothing = des vêtements (clothes)
+échelle|nom f.|ladder; scale = à l'échelle mondiale
+appartenir|verbe|to belong = appartenir à
+aéroport|nom m.|airport
+canal|nom m.|canal; channel
+chier|verbe|to shit (vulgar); faire chier = to annoy
+comte|nom m.|count, earl
+constituer|verbe|to constitute, to make up; to form, to set up
+contrairement|adv.|unlike, contrary to = contrairement à
+défaut|nom m.|fault, flaw; lack = à défaut de (failing that); par défaut (by default)
+enfance|nom f.|childhood
+estime|nom f.|esteem, respect = estime de soi
+gare|nom f.|station = gare SNCF
+glace|nom f.|ice; ice cream; mirror
+hommage|nom m.|tribute = rendre hommage à (to pay tribute to)
+humanité|nom f.|humanity, mankind
+intéresser|verbe|to interest; s'intéresser à = to be interested in
+logement|nom m.|housing, accommodation
+maximum|nom m.|maximum = au maximum
+piste|nom f.|track, trail; lead, clue = une piste sérieuse; runway; slope = piste de ski
+plage|nom f.|beach = à la plage
+policier|nom m.|police officer; detective story (roman policier)
+post|nom m.|post (social media)
+procédure|nom f.|procedure; proceedings
+produire|verbe|to produce; se produire = to happen, to perform
+proximité|nom f.|proximity = à proximité de (near)
+précis|adj.|precise, exact
+signer|verbe|to sign
+station|nom f.|station = station de métro; resort = station de ski
+stratégie|nom f.|strategy
+volume|nom m.|volume
+égalité|nom f.|equality; draw (sport) = à égalité
+chômage|nom m.|unemployment = au chômage (unemployed), taux de chômage
+clé|nom f.|key = clé USB; key (adj.) = un rôle clé
+comportement|nom m.|behaviour
+congrès|nom m.|congress, conference
+discussion|nom f.|discussion, talk
+distribution|nom f.|distribution; cast (film)
+division|nom f.|division
+définition|nom f.|definition
+mandat|nom m.|term of office = un second mandat; mandate; warrant = mandat d'arrêt
+montagne|nom f.|mountain = à la montagne
+médecine|nom f.|medicine (science)
+net|adj.|clear, sharp; net = salaire net
+nourriture|nom f.|food
+pape|nom m.|pope
+phénomène|nom m.|phenomenon
+précédent|adj.|previous = l'année précédente; precedent (nom m.)
+refuser|verbe|to refuse, to turn down
+représentant|nom m.|representative
+sale|adj.|dirty; nasty (before noun) = un sale temps
+amoureux|adj.|in love = tomber amoureux de
+appartement|nom m.|flat, apartment
+bateau|nom m.|boat
+bilan|nom m.|assessment, review = faire le bilan; toll = le bilan s'alourdit (death toll rises); balance sheet
+cabinet|nom m.|office, practice = cabinet médical; cabinet (government)
+cap|nom m.|cape (geography); course = garder le cap
+considérer|verbe|to consider
+disparaître|verbe|to disappear
+douleur|nom f.|pain
+décès|nom m.|death
+démocratie|nom f.|democracy
+espagnol|adj.|Spanish
+faim|nom f.|hunger = avoir faim (to be hungry)
+formule|nom f.|formula; set menu; formule 1
+lait|nom m.|milk
+lune|nom f.|moon
+marquer|verbe|to mark; to score = marquer un but
+office|nom m.|office; tourist office = office de tourisme
+peinture|nom f.|painting; paint
+printemps|nom m.|spring = au printemps
+profit|nom m.|profit = au profit de (for the benefit of)
+restaurant|nom m.|restaurant
+retourner|verbe|to go back, to return; to turn over
+température|nom f.|temperature
+véhicule|nom m.|vehicle
+apporter|verbe|to bring
+balle|nom f.|ball (small); bullet
+barre|nom f.|bar, rod; helm
+bibliothèque|nom f.|library; bookcase
+climat|nom m.|climate = changement climatique
+conflit|nom m.|conflict
+essentiel|adj.|essential; the main thing (nom m.) = l'essentiel
+exception|nom f.|exception = à l'exception de
+extrêmement|adv.|extremely
+forêt|nom f.|forest
+frontière|nom f.|border
+gratuit|adj.|free (of charge)
+génie|nom m.|genius; engineering = génie civil
+honte|nom f.|shame = avoir honte (to be ashamed)
+invité|nom m.|guest
+islam|nom m.|Islam
+menace|nom f.|threat
+mobile|adj.|mobile; motive (nom m.); mobile phone (nom m.)
+orange|adj.|orange; orange (nom f.)
+présentation|nom f.|presentation; introduction
+présidentiel|adj.|presidential = l'élection présidentielle
+quantité|nom f.|quantity, amount
+race|nom f.|breed; race
+reconnaître|verbe|to recognize; to admit
+réellement|adv.|really
+thème|nom m.|theme, topic
+usine|nom f.|factory
+ambiance|nom f.|atmosphere, mood
+aventure|nom f.|adventure; affair
+blessé|nom m.|injured person = trois blessés; injured (adj.)
+contenir|verbe|to contain
+dessin|nom m.|drawing = dessin animé (cartoon)
+duc|nom m.|duke
+déclarer|verbe|to declare, to state
+défaite|nom f.|defeat
+finance|nom f.|finance = les finances publiques
+fédération|nom f.|federation
+huile|nom f.|oil = huile d'olive
+inquiéter|verbe|to worry = s'inquiéter (to be worried)
+littérature|nom f.|literature
+métro|nom m.|underground, subway
+placer|verbe|to put, to place; to invest
+relativement|adv.|relatively
+rivière|nom f.|river
+robe|nom f.|dress
+réalisation|nom f.|achievement, completion; direction (film)
+salaire|nom m.|salary, wage
+toucher|verbe|to touch; to affect, to hit = touché par la crise; to receive = toucher un salaire
+traduction|nom f.|translation
+tranquille|adj.|quiet, calm = laisse-moi tranquille
+trente|num.|thirty
+vérifier|verbe|to check
+écriture|nom f.|writing; handwriting
+épreuve|nom f.|test, trial, ordeal; event (sport)
+étoile|nom f.|star = restaurant étoilé
+académie|nom f.|academy = Académie française
+auparavant|adv.|before, previously
+chaleur|nom f.|heat; warmth
+commande|nom f.|order = passer une commande; control = aux commandes
+concurrence|nom f.|competition = en concurrence
+conduite|nom f.|driving; conduct, behaviour
+discuter|verbe|to discuss, to talk
+doigt|nom m.|finger
+fruit|nom m.|fruit = fruits de mer (seafood)
+haine|nom f.|hatred
+humour|nom m.|humour
+informatique|nom f.|computing, IT
+interne|adj.|internal
+légende|nom f.|legend; caption
+magasin|nom m.|shop = grand magasin (department store)
+organiser|verbe|to organize
+plaire|verbe|to please = ça me plaît (I like it); s'il vous plaît = please
+rang|nom m.|row; rank
+recours|nom m.|recourse = avoir recours à (to resort to); appeal
+réflexion|nom f.|thought, reflection
+tradition|nom f.|tradition
+travailleur|nom m.|worker
+veille|nom f.|the day before, eve = la veille de Noël; standby
+épouse|nom f.|wife
+alliance|nom f.|alliance; wedding ring
+apparemment|adv.|apparently
+arbre|nom m.|tree
+aspect|nom m.|aspect; appearance
+attendu|adj.|expected = très attendu
+auquel|pron.|to which, to whom = le projet auquel je pense
+bac|nom m.|baccalauréat (school-leaving exam); tub, tray; ferry
+composé|adj.|compound, made up of = composé de
+conception|nom f.|design; conception
+engagement|nom m.|commitment; engagement
+ennemi|nom m.|enemy
+fonctionner|verbe|to work, to function
+fonctionnement|nom m.|functioning, operation
+impôt|nom m.|tax = impôt sur le revenu
+individu|nom m.|individual, person
+initiative|nom f.|initiative
+inutile|adj.|useless, pointless
+investissement|nom m.|investment
+maintenir|verbe|to maintain, to keep
+papa|nom m.|dad
+passion|nom f.|passion
+profil|nom m.|profile
+préparation|nom f.|preparation
+record|nom m.|record = battre un record
+remplacer|verbe|to replace
+respecter|verbe|to respect; to comply with
+royal|adj.|royal
+sérieusement|adv.|seriously
+électricité|nom f.|electricity
+apparaître|verbe|to appear
+avouer|verbe|to admit, to confess
+belge|adj.|Belgian
+blog|nom m.|blog
+canadien|adj.|Canadian
+centaine|nom f.|about a hundred = des centaines de
+chapitre|nom m.|chapter
+circulation|nom f.|traffic; circulation
+conduire|verbe|to drive; to lead = conduire à
+conversation|nom f.|conversation
+correspondre|verbe|to correspond, to match
+coucher|verbe|to put to bed; se coucher = to go to bed; coucher du soleil (nom m.) = sunset
+entraîneur|nom m.|coach, trainer
+essai|nom m.|essay; attempt, test; try (rugby)
+financement|nom m.|funding, financing
+gentil|adj.|kind, nice
+institution|nom f.|institution
+japonais|adj.|Japanese
+jugement|nom m.|judgement; verdict
+marcher|verbe|to walk; to work = ça marche (it works, OK)
+monnaie|nom f.|currency; change = la monnaie
+neige|nom f.|snow
+nucléaire|adj.|nuclear
+pluie|nom f.|rain
+pote|nom m.|mate, pal (informal)
+primaire|adj.|primary = école primaire; primary election (nom f.)
+promettre|verbe|to promise
+reconnaissance|nom f.|recognition; gratitude
+rythme|nom m.|rhythm, pace
+vélo|nom m.|bike = à vélo
+échec|nom m.|failure = en échec; chess (pl.) = les échecs
+amitié|nom f.|friendship
+bain|nom m.|bath = salle de bains
+dent|nom f.|tooth
+doux|adj.|soft; mild = un climat doux; sweet; gentle = à feu doux (over a low heat)
+enceinte|adj.|pregnant; speaker, enclosure (nom f.)
+fan|nom m./f.|fan
+langage|nom m.|language (way of speaking)
+légèrement|adv.|slightly; lightly
+original|adj.|original = version originale
+perso|adj.|personal (informal)
+philosophie|nom f.|philosophy
+plateau|nom m.|tray; plateau; set (TV) = sur le plateau
+quasi|adv.|almost = quasi impossible
+récupérer|verbe|to get back, to recover; to pick up
+résidence|nom f.|residence = résidence secondaire (holiday home)
+salarié|nom m.|employee
+talent|nom m.|talent
+tourisme|nom m.|tourism
+traiter|verbe|to treat; to deal with; to process
+archive|nom f.|archive = les archives
+bravo|interj.|well done!, bravo
+commandant|nom m.|commander; captain
+commercial|adj.|commercial, trade; sales rep (nom m.)
+convention|nom f.|convention, agreement
+couche|nom f.|layer; nappy, diaper
+couverture|nom f.|blanket; cover; coverage = couverture médiatique
+disposer|verbe|to have (at one's disposal) = disposer de
+détester|verbe|to hate
+empereur|nom m.|emperor
+fier|adj.|proud = fier de
+italien|adj.|Italian
+lever|verbe|to raise, to lift; se lever = to get up; lever du soleil (nom m.) = sunrise
+option|nom f.|option
+planter|verbe|to plant; to crash (computer)
+promotion|nom f.|promotion; special offer = en promotion
+remarque|nom f.|remark
+règlement|nom m.|regulation, rules; settlement, payment
+sacré|adj.|sacred; damned, real (before noun) = un sacré problème
+scénario|nom m.|script; scenario
+socialiste|adj.|socialist
+surveillance|nom f.|surveillance, monitoring
+tas|nom m.|pile, heap = un tas de (loads of)
+technologie|nom f.|technology
+tort|nom m.|wrong = avoir tort (to be wrong); à tort = wrongly
+trou|nom m.|hole
+voisin|nom m.|neighbour; neighbouring (adj.) = un pays voisin
+voter|verbe|to vote
+affiche|nom f.|poster = à l'affiche (showing, on)
+cacher|verbe|to hide
+caisse|nom f.|till, checkout; box, crate; fund = caisse de retraite
+casser|verbe|to break
+collectif|adj.|collective; group (nom m.)
+compliquer|verbe|to complicate; compliqué = complicated
+condamné|nom m.|convict; condemned (adj.) = condamné à cinq ans de prison
+consister|verbe|to consist = consister à, consister en
+couper|verbe|to cut; to cut off
+effectivement|adv.|indeed, in fact, actually
+essentiellement|adv.|essentially, mainly
+excuse|nom f.|excuse; apology = présenter ses excuses
+exprimer|verbe|to express
+fermer|verbe|to close, to shut
+hausse|nom f.|rise, increase = en hausse (rising)
+judiciaire|adj.|judicial, legal = une enquête judiciaire
+libération|nom f.|liberation; release
+mairie|nom f.|town hall
+manuel|adj.|manual; textbook (nom m.)
+organisme|nom m.|body, organization; organism
+personnalité|nom f.|personality; public figure
+princesse|nom f.|princess
+progrès|nom m.|progress
+prouver|verbe|to prove
+puissant|adj.|powerful
+retirer|verbe|to withdraw, to remove; to take out = retirer de l'argent
+réfléchir|verbe|to think, to reflect
+résumé|nom m.|summary (not "CV")
+suffisamment|adv.|enough, sufficiently
+vaste|adj.|vast, huge
+équilibre|nom m.|balance
+attente|nom f.|wait, waiting = salle d'attente; expectation
+cercle|nom m.|circle; club
+cesse|nom f.|sans cesse = constantly, non-stop
+dette|nom f.|debt
+douze|num.|twelve
+démocratique|adj.|democratic
+fenêtre|nom f.|window
+former|verbe|to form; to train = former des enseignants
+fournir|verbe|to supply, to provide
+frapper|verbe|to hit, to strike; to knock = frapper à la porte
+grève|nom f.|strike = en grève
+jusque|prép.|until, as far as = jusqu'à, jusque-là
+meurtre|nom m.|murder
+mélange|nom m.|mixture, blend
+normalement|adv.|normally, usually; in principle
+ombre|nom f.|shadow; shade = à l'ombre
+pilote|nom m./f.|pilot; driver (racing)
+plat|nom m.|dish = plat du jour; course = plat principal; flat (adj.)
+surprendre|verbe|to surprise
+terrible|adj.|terrible; great (informal) = pas terrible (not great)
+établir|verbe|to establish, to set up
+étage|nom m.|floor, storey = au premier étage
+actualité|nom f.|news, current events = l'actualité; topicality
+agréable|adj.|pleasant, nice
+avancer|verbe|to move forward, to advance; to bring forward
+bienvenu|adj.|welcome = bienvenue !
+bête|adj.|stupid; animal, beast (nom f.)
+catholique|adj.|Catholic
+chaussure|nom f.|shoe
+chrétien|adj.|Christian
+cible|nom f.|target
+décrire|verbe|to describe
+format|nom m.|format, size
+génial|adj.|great, brilliant
+installer|verbe|to install, to set up; s'installer = to settle
+jambe|nom f.|leg
+lieutenant|nom m.|lieutenant
+lier|verbe|to link, to tie = lié à (linked to)
+magazine|nom m.|magazine
+partenaire|nom m./f.|partner
+patient|nom m.|patient; patient (adj.)
+performance|nom f.|performance
+plaindre|verbe|to feel sorry for; se plaindre = to complain
+portable|nom m.|mobile phone; laptop; portable (adj.)
+portrait|nom m.|portrait
+score|nom m.|score
+superbe|adj.|superb, gorgeous
+tournoi|nom m.|tournament
+viande|nom f.|meat
+vierge|adj.|virgin; blank = page vierge
+étrange|adj.|strange
+attitude|nom f.|attitude
+batterie|nom f.|battery; drums
+collaboration|nom f.|collaboration
+composition|nom f.|composition, make-up
+contenter|verbe|to satisfy; se contenter de = to make do with
+convaincre|verbe|to convince
+copine|nom f.|girlfriend; friend
+diffusion|nom f.|broadcasting; distribution
+dirigeant|nom m.|leader, manager
+essence|nom f.|petrol, gasoline; essence
+fondation|nom f.|foundation
+guide|nom m.|guide; guidebook
+immobilier|nom m.|property, real estate
+imposer|verbe|to impose; s'imposer = to win, to prevail; to be essential
+inviter|verbe|to invite
+jeter|verbe|to throw (away)
+nécessité|nom f.|necessity, need
+officiellement|adv.|officially
+poisson|nom m.|fish
+représentation|nom f.|performance (theatre); representation
+régler|verbe|to settle, to sort out = régler un problème; to pay = régler la note; to adjust
+spécialiste|nom m./f.|specialist, expert
+stage|nom m.|internship, work placement; training course
+supposer|verbe|to suppose, to assume
+user|verbe|to wear out; user de = to use, to make use of
+évident|adj.|obvious = ce n'est pas évident (it's not easy)
+acquérir|verbe|to acquire, to buy
+actif|adj.|active; working = la population active
+automne|nom m.|autumn, fall = en automne
+bloc|nom m.|block = en bloc; pad = bloc-notes
+chocolat|nom m.|chocolate = chocolat chaud
+collègue|nom m./f.|colleague
+confirmer|verbe|to confirm
+extrait|nom m.|extract, excerpt
+financier|adj.|financial
+fixer|verbe|to fix, to set = fixer une date; to stare at
+foule|nom f.|crowd = une foule de (a lot of)
+fédéral|adj.|federal
+gay|adj.|gay
+immense|adj.|huge, immense
+immeuble|nom m.|building, block of flats
+interview|nom f.|interview
+inverse|adj.|opposite, reverse = à l'inverse
+léger|adj.|light; slight = une légère hausse
+ordinateur|nom m.|computer
+os|nom m.|bone
+outil|nom m.|tool
+précisément|adv.|precisely, exactly
+pub|nom f.|advert, advertising (informal); pub (nom m.)
+pêche|nom f.|fishing; peach
+rarement|adv.|rarely
+recette|nom f.|recipe; takings, revenue = les recettes
+souci|nom m.|worry = pas de souci (no problem); concern
+séjour|nom m.|stay = un séjour à Rome; living room = salle de séjour
+taxe|nom f.|tax
+transfert|nom m.|transfer
+vigueur|nom f.|vigour; in force (en vigueur) = entrer en vigueur
+voile|nom m./f.|veil (m.) = le voile islamique; sail (f.) = faire de la voile (to sail)
+zéro|nom m.|zero
+billet|nom m.|ticket = billet de train; banknote = billet de 20 euros
+calcul|nom m.|calculation; arithmetic
+caractéristique|nom f.|feature, characteristic; typical (adj.)
+choc|nom m.|shock; clash, impact
+disque|nom m.|record, disc
+décret|nom m.|decree
+désir|nom m.|desire, wish
+déterminer|verbe|to determine
+enlever|verbe|to remove, to take off; to kidnap
+entraînement|nom m.|training
+fabrication|nom f.|manufacture, making
+lourd|adj.|heavy; serious = de lourdes pertes
+micro|nom m.|microphone, mic
+mont|nom m.|mount, mountain = le mont Blanc
+moral|adj.|moral; morale (nom m.) = avoir le moral (to be in good spirits)
+obligation|nom f.|obligation; bond (finance)
+officier|nom m.|officer
+poche|nom f.|pocket = livre de poche (paperback)
+prénom|nom m.|first name
+rock|nom m.|rock (music)
+solide|adj.|solid, strong, sturdy
+tentative|nom f.|attempt = tentative de meurtre
+vallée|nom f.|valley
+égard|nom m.|regard = à l'égard de (towards), à cet égard (in this respect)
+agricole|adj.|agricultural, farming
+appliquer|verbe|to apply; to implement
+attaquer|verbe|to attack
+autorisation|nom f.|permission, authorization
+circuit|nom m.|circuit; tour
+courir|verbe|to run
+déjeuner|verbe|to have lunch; lunch (nom m.) = petit déjeuner (breakfast)
+délai|nom m.|deadline, time limit; delay = dans les plus brefs délais (as soon as possible)
+efficacité|nom f.|effectiveness, efficiency
+expert|nom m.|expert
+feuille|nom f.|leaf; sheet = feuille de papier
+idéal|adj.|ideal
+intelligence|nom f.|intelligence = intelligence artificielle
+mention|nom f.|mention; grade, distinction (exam)
+pause|nom f.|break = faire une pause
+quart|nom m.|quarter = un quart d'heure, les quarts de finale
+ridicule|adj.|ridiculous
+réputation|nom f.|reputation
+secondaire|adj.|secondary = effets secondaires (side effects)
+studio|nom m.|studio; studio flat
+sucre|nom m.|sugar
+sénat|nom m.|senate
+trafic|nom m.|traffic; trafficking = trafic de drogue
+utilisateur|nom m.|user
+électeur|nom m.|voter
+étudier|verbe|to study
+affirmer|verbe|to claim, to assert, to state
+angle|nom m.|angle; corner = à l'angle de la rue
+appui|nom m.|support = à l'appui de
+bière|nom f.|beer
+compétence|nom f.|skill, competence; jurisdiction
+coupable|adj.|guilty; culprit (nom m./f.)
+culturel|adj.|cultural
+cérémonie|nom f.|ceremony
+debout|adv.|standing = rester debout; up = je suis debout à 6 h
+drogue|nom f.|drug(s)
+détruire|verbe|to destroy
+enfer|nom m.|hell
+gardien|nom m.|guard, keeper = gardien de but (goalkeeper); caretaker
+geste|nom m.|gesture; act
+majeur|adj.|major; of age = être majeur (to be an adult)
+notion|nom f.|notion, idea
+pardon|interj.|sorry!, excuse me! = pardon ?; forgiveness (nom m.)
+poursuivre|verbe|to continue, to pursue; to prosecute, to sue
+pousser|verbe|to push; to grow = les plantes poussent; to urge
+relever|verbe|to raise, to lift again; to point out; relever de = to come under
+règne|nom m.|reign
+récit|nom m.|story, account, narrative
+sommeil|nom m.|sleep
+suicide|nom m.|suicide
+tome|nom m.|volume (book)
+trace|nom f.|trace, mark, track
+tâche|nom f.|task (tache, without ^, = stain)
+accueillir|verbe|to welcome; to host, to receive = accueillir des réfugiés
+associé|nom m.|partner, associate
+atelier|nom m.|workshop; studio
+automobile|nom f.|car; motor industry
+charte|nom f.|charter
+cinquième|adj.|fifth
+circonstance|nom f.|circumstance
+conserver|verbe|to keep, to preserve
+définitivement|adv.|permanently, for good
+démarche|nom f.|step, process = les démarches administratives; approach; gait
+foot|nom m.|football (informal)
+gouverneur|nom m.|governor
+gratuitement|adv.|for free
+incendie|nom m.|fire, blaze = incendie de forêt
+interprétation|nom f.|interpretation; performance
+juridique|adj.|legal
+leader|nom m.|leader
+luxe|nom m.|luxury = de luxe
+manifestation|nom f.|demonstration, protest; event
+multiple|adj.|multiple, many
+municipal|adj.|municipal, town = élections municipales
+noter|verbe|to note, to write down; to mark, to grade
+positif|adj.|positive
+procureur|nom m.|prosecutor
+prof|nom m./f.|teacher (informal)
+pré|nom m.|meadow
+pétrole|nom m.|oil, petroleum
+reposer|verbe|to put down again; reposer sur = to rest on, to be based on; se reposer = to rest
+show|nom m.|show
+vague|nom f.|wave = vague de chaleur (heatwave); vague (adj.)
+abus|nom m.|abuse = abus sexuels; misuse
+aise|nom f.|ease = à l'aise (comfortable, at ease)
+commissaire|nom m./f.|commissioner = commissaire européen; superintendent (police)
+convenir|verbe|to suit = ça me convient; to agree = convenir de
+coopération|nom f.|cooperation
+degré|nom m.|degree
+drapeau|nom m.|flag
+franc|adj.|frank, honest; franc (currency, nom m.)
+fuite|nom f.|escape = en fuite (on the run); leak
+gamme|nom f.|range = haut de gamme (top-of-the-range); scale (music)
+lunette|nom f.|glasses (pl.) = des lunettes de soleil; telescope
+mine|nom f.|look, appearance = avoir bonne mine (to look well); mine; lead (pencil)
+obligatoire|adj.|compulsory, mandatory
+paradis|nom m.|paradise, heaven = paradis fiscal (tax haven)
+potentiel|adj.|potential
+remarquer|verbe|to notice
+repos|nom m.|rest = jour de repos
+sec|adj.|dry
+sondage|nom m.|opinion poll, survey
+standard|adj.|standard; switchboard (nom m.)
+trésor|nom m.|treasure; treasury
+électronique|adj.|electronic
+évidence|nom f.|obviousness = de toute évidence (obviously); mettre en évidence = to highlight
+alerte|nom f.|alert, warning; alert (adj.)
+architecture|nom f.|architecture
+baiser|nom m.|kiss; to fuck (verbe, vulgar)
+bourse|nom f.|stock exchange = la Bourse; grant, scholarship
+comparaison|nom f.|comparison = en comparaison de
+connerie|nom f.|bullshit, stupid thing (vulgar)
+coûter|verbe|to cost
+cycle|nom m.|cycle
+destination|nom f.|destination = à destination de (bound for)
+douche|nom f.|shower
+explication|nom f.|explanation
+exécution|nom f.|execution; carrying out
+fonctionnaire|nom m./f.|civil servant, public employee
+inscription|nom f.|registration, enrolment; inscription
+lèvre|nom f.|lip
+mail|nom m.|email
+oiseau|nom m.|bird
+oreille|nom f.|ear
+paiement|nom m.|payment
+parisien|adj.|Parisian
+profondeur|nom f.|depth
+publicité|nom f.|advertising, advertisement
+queue|nom f.|tail; queue = faire la queue
+quinze|num.|fifteen
+régional|adj.|regional = élections régionales
+résoudre|verbe|to solve, to resolve
+réussite|nom f.|success
+sexy|adj.|sexy
+tir|nom m.|shot; shooting
+tonne|nom f.|tonne, ton = des tonnes de (loads of)
+traduire|verbe|to translate; se traduire par = to result in
+témoin|nom m.|witness
+échapper|verbe|to escape = échapper à; s'échapper = to escape
+adulte|nom m./f.|adult
+alimentation|nom f.|food, diet; supply = alimentation en eau
+apparition|nom f.|appearance
+arrondissement|nom m.|district (of Paris, Lyon, Marseille)
+artistique|adj.|artistic
+ballon|nom m.|ball; balloon
+bio|adj.|organic (informal) = produits bio
+branche|nom f.|branch
+caméra|nom f.|camera (film, video)
+chercheur|nom m.|researcher
+conclusion|nom f.|conclusion
+contrôler|verbe|to check; to control
+corse|adj.|Corsican
+couronne|nom f.|crown; wreath
+curieux|adj.|curious; strange
+dialogue|nom m.|dialogue
+dispositif|nom m.|system, scheme, measures = dispositif de sécurité; device
+engager|verbe|to hire; to begin, to start = engager des négociations; s'engager = to commit
+facteur|nom m.|postman; factor
+fameux|adj.|famous; well-known, notorious
+grec|adj.|Greek
+habiter|verbe|to live (in) = habiter à Paris
+ingénieur|nom m.|engineer
+laboratoire|nom m.|laboratory
+lancement|nom m.|launch
+larme|nom f.|tear = en larmes
+libéral|adj.|liberal; profession libérale = self-employed professional
+liquide|adj.|liquid; cash (nom m.) = payer en liquide
+lot|nom m.|batch, lot; prize = gros lot (jackpot)
+lutter|verbe|to fight, to struggle = lutter contre
+manquer|verbe|to miss = tu me manques (I miss you); to lack = manquer de; to fail to
+médicament|nom m.|medicine, drug
+olympique|adj.|Olympic = Jeux olympiques
+prime|nom f.|bonus, premium, grant
+prévenir|verbe|to warn, to tell; to prevent
+pur|adj.|pure
+remplir|verbe|to fill (in) = remplir un formulaire
+rupture|nom f.|break-up; break, breach = en rupture de stock (out of stock)
+ski|nom m.|skiing; ski
+solidarité|nom f.|solidarity
+sombre|adj.|dark, gloomy
+supporter|verbe|to bear, to stand = je ne le supporte pas; supporter, fan (nom m.)
+supprimer|verbe|to delete, to remove; to abolish, to cut = supprimer des emplois
+temple|nom m.|temple; Protestant church
+transition|nom f.|transition = transition énergétique
+amélioration|nom f.|improvement
+ange|nom m.|angel
+bouger|verbe|to move
+bouteille|nom f.|bottle
+cou|nom m.|neck
+critère|nom m.|criterion
+destiner|verbe|to intend for = destiné à
+dizaine|nom f.|about ten = une dizaine de
+favorable|adj.|favourable, in favour = favorable à
+folle|adj.|mad, crazy (feminine of fou)
+fortune|nom f.|fortune
+horreur|nom f.|horror = film d'horreur
+introduction|nom f.|introduction
+jurer|verbe|to swear
+manche|nom f.|sleeve; round, set (sport); handle (nom m.); the Channel = la Manche
+montage|nom m.|editing (film); assembly
+morceau|nom m.|piece, bit; track (music)
+navire|nom m.|ship
+océan|nom m.|ocean
+perspective|nom f.|prospect, outlook = en perspective; perspective
+piscine|nom f.|swimming pool
+présidence|nom f.|presidency
+rappel|nom m.|reminder; recall; booster (vaccine)
+rapporter|verbe|to bring back; to report; to earn, to yield = ça rapporte
+résolution|nom f.|resolution
+signature|nom f.|signature; signing
+symbole|nom m.|symbol
+tension|nom f.|tension; blood pressure
+thèse|nom f.|thesis; doctoral thesis
+trouble|nom m.|disorder = troubles du sommeil; unrest (pl.) = des troubles; blurred (adj.)
+ventre|nom m.|stomach, belly
+virus|nom m.|virus
+voler|verbe|to steal; to fly
+écrivain|nom m.|writer
+équivalent|adj.|equivalent
+abri|nom m.|shelter = à l'abri de (sheltered from); sans-abri = homeless
+accompagner|verbe|to accompany, to go with
+accusé|nom m.|defendant, accused
+business|nom m.|business
+cellule|nom f.|cell; unit = cellule de crise
+combattre|verbe|to fight, to combat
+couvrir|verbe|to cover
+culte|nom m.|worship, cult = film culte
+digne|adj.|worthy; dignified
+disparition|nom f.|disappearance; death
+dépôt|nom m.|deposit; depot; filing = dépôt de plainte
+fidèle|adj.|faithful, loyal; believer (nom m./f.)
+hâte|nom f.|haste = avoir hâte de (to look forward to)
+industriel|adj.|industrial
+installation|nom f.|installation; setting up
+intégration|nom f.|integration
+job|nom m.|job (informal)
+jury|nom m.|jury; panel
+lâche|adj.|cowardly; loose
+médaille|nom f.|medal = médaille d'or
+ménage|nom m.|housework = faire le ménage; household
+odeur|nom f.|smell
+pitié|nom f.|pity, mercy
+plante|nom f.|plant
+poésie|nom f.|poetry
+priorité|nom f.|priority = en priorité
+probable|adj.|likely, probable
+ramener|verbe|to bring back, to take back
+refus|nom m.|refusal
+richesse|nom f.|wealth; richness
+révéler|verbe|to reveal
+sensible|adj.|sensitive (not "sensible"); noticeable
+souffle|nom m.|breath; blast
+totalité|nom f.|whole = la totalité de
+viser|verbe|to aim at, to target
+actrice|nom f.|actress
+arc|nom m.|bow; arch = arc de triomphe
+balance|nom f.|scales; balance
+comédie|nom f.|comedy = comédie musicale
+corruption|nom f.|corruption
+crème|nom f.|cream = crème fraîche
+extension|nom f.|extension
+folie|nom f.|madness
+forum|nom m.|forum
+féminin|adj.|female, women's = football féminin; feminine
+garantie|nom f.|guarantee, warranty
+honnête|adj.|honest
+hypothèse|nom f.|hypothesis
+indépendant|adj.|independent; freelance
+licence|nom f.|bachelor's degree; licence
+naturellement|adv.|naturally, of course
+norme|nom f.|norm, standard
+parallèle|adj.|parallel = en parallèle
+profondément|adv.|deeply
+précision|nom f.|precision, accuracy; detail = des précisions
+prêtre|nom m.|priest
+raté|adj.|failed, missed; failure (nom m.)
+regretter|verbe|to regret, to be sorry
+sexuel|adj.|sexual
+sportif|adj.|sporty, sports = événement sportif; sportsman (nom m.)
+spécialement|adv.|especially, specially
+spécifique|adj.|specific
+toit|nom m.|roof
+écart|nom m.|gap, difference = écart de salaire; à l'écart = apart
+asseoir|verbe|to sit (someone) down; s'asseoir = to sit down
+chronique|nom f.|column (newspaper); chronic (adj.)
+contribution|nom f.|contribution
+copie|nom f.|copy; exam paper
+destruction|nom f.|destruction
+diplôme|nom m.|diploma, degree
+enregistrement|nom m.|recording; check-in, registration
+envoi|nom m.|sending; consignment
+extraordinaire|adj.|extraordinary
+fondé|adj.|founded; justified, well-founded = fondé sur (based on)
+foyer|nom m.|home, household; hostel
+horrible|adj.|horrible, awful
+humeur|nom f.|mood = de bonne humeur
+immigration|nom f.|immigration
+inconnu|adj.|unknown; stranger (nom m.)
+innovation|nom f.|innovation
+littéraire|adj.|literary = prix littéraire
+magique|adj.|magic, magical
+maintien|nom m.|maintaining, keeping = maintien de l'ordre (policing)
+marrant|adj.|funny (informal)
+maîtrise|nom f.|mastery, control; master's degree
+mécanique|adj.|mechanical; mechanics (nom f.)
+participant|nom m.|participant
+pute|nom f.|whore (vulgar, offensive)
+remonter|verbe|to go back up; to date back = remonter à
+renseignement|nom m.|information = des renseignements; intelligence = les services de renseignement
+restauration|nom f.|catering, restaurant industry; restoration
+romain|adj.|Roman
+sable|nom m.|sand
+sel|nom m.|salt
+supplémentaire|adj.|additional, extra
+suprême|adj.|supreme = Cour suprême
+syndicat|nom m.|trade union, union = les syndicats
+toile|nom f.|canvas; cloth; the Web = la Toile
+transformation|nom f.|transformation, change
+témoignage|nom m.|testimony, account
+vainqueur|nom m.|winner, victor
+énormément|adv.|enormously, a great deal = énormément de
+évaluation|nom f.|assessment, evaluation
+évêque|nom m.|bishop
+abandonner|verbe|to abandon, to give up
+adaptation|nom f.|adaptation
+adjoint|nom m.|deputy, assistant = maire adjoint
+avenue|nom f.|avenue
+axe|nom m.|axis; main road; focus
+calendrier|nom m.|calendar; schedule
+champagne|nom m.|champagne; Champagne (region, nom f.)
+consacrer|verbe|to devote, to dedicate = consacrer du temps à
+concevoir|verbe|to design; to conceive
+cousin|nom m.|cousin
+drame|nom m.|tragedy, drama
+durable|adj.|sustainable = développement durable; lasting
+dynamique|adj.|dynamic; momentum (nom f.)
+déplacement|nom m.|trip, journey = en déplacement; movement, displacement
+fermeture|nom f.|closure, closing
+fondateur|nom m.|founder
+galerie|nom f.|gallery; arcade
+indice|nom m.|clue; index = indice des prix
+interdiction|nom f.|ban
+major|adj.|top, best (of a class); major (nom m.)
+nécessairement|adv.|necessarily
+pis|adv.|worse = tant pis (never mind, too bad)
+plaque|nom f.|plate; sheet = plaque d'immatriculation (number plate)
+pop|adj.|pop = musique pop
+profond|adj.|deep
+refaire|verbe|to redo, to do again; to remake
+réalisateur|nom m.|director (film)
+rédaction|nom f.|newsroom, editorial staff; writing
+sauvage|adj.|wild; savage
+seuil|nom m.|threshold; doorstep
+solo|nom m.|solo
+visible|adj.|visible
+visiter|verbe|to visit (a place)
+accent|nom m.|accent; emphasis = mettre l'accent sur
+animation|nom f.|animation; activities, entertainment
+attirer|verbe|to attract
+bassin|nom m.|pool, pond; basin, area = bassin d'emploi; pelvis
+baser|verbe|to base = basé sur, basé à
+boutique|nom f.|shop
+canon|nom m.|cannon; gorgeous (informal, adj.)
+carré|adj.|square = mètre carré
+carrément|adv.|completely, downright; straight out
+chapeau|nom m.|hat
+col|nom m.|collar; pass (mountain)
+courrier|nom m.|mail, post; letter
+destin|nom m.|fate, destiny
+diversité|nom f.|diversity
+déchet|nom m.|waste = les déchets
+dépasser|verbe|to exceed, to go beyond; to overtake
+hyper|adv.|really, super (informal) = hyper bien
+intermédiaire|adj.|intermediate; intermediary (nom m.) = par l'intermédiaire de
+logiciel|nom m.|software
+loup|nom m.|wolf
+marge|nom f.|margin = en marge de (on the sidelines of)
+médical|adj.|medical
+oncle|nom m.|uncle
+parlementaire|adj.|parliamentary; member of parliament (nom m./f.)
+personnellement|adv.|personally
+poète|nom m.|poet
+préciser|verbe|to specify, to add, to point out
+réfugier|verbe|se réfugier = to take refuge; réfugié = refugee
+stop|interj.|stop!
+stress|nom m.|stress
+équipement|nom m.|equipment
+accéder|verbe|to access, to reach = accéder à
+allié|nom m.|ally
+apprentissage|nom m.|learning; apprenticeship
+assistance|nom f.|assistance, help; audience
+atmosphère|nom f.|atmosphere
+attentat|nom m.|attack (terrorist) = un attentat à la bombe
+bombe|nom f.|bomb
+charme|nom m.|charm
+citer|verbe|to quote; to mention, to name
+comporter|verbe|to include, to contain; se comporter = to behave
+copain|nom m.|friend, mate; boyfriend
+dimension|nom f.|dimension
+dingue|adj.|crazy (informal)
+discipline|nom f.|discipline; subject
+défi|nom m.|challenge
+effectuer|verbe|to carry out, to make
+identifier|verbe|to identify
+intelligent|adj.|intelligent, clever
+justifier|verbe|to justify
+leçon|nom f.|lesson
+limiter|verbe|to limit
+marre|adv.|en avoir marre = to be fed up
+mystère|nom m.|mystery
+méchant|adj.|nasty, mean; bad guy (nom m.)
+opposer|verbe|to oppose; s'opposer à = to be against
+orientation|nom f.|direction, orientation; guidance = orientation scolaire
+paquet|nom m.|packet, parcel
+paysage|nom m.|landscape, scenery
+pleurer|verbe|to cry
+prisonnier|nom m.|prisoner
+pôle|nom m.|pole; centre, hub = pôle emploi
+quasiment|adv.|almost, practically
+retrait|nom m.|withdrawal = retrait des troupes; retrait d'argent
+réception|nom f.|reception; receipt
+visiteur|nom m.|visitor
+amende|nom f.|fine = une amende de 100 euros
+amener|verbe|to bring, to take (someone)
+aménagement|nom m.|development, planning; fitting out
+atlantique|adj.|Atlantic
+autonomie|nom f.|autonomy, independence; battery life
+autoroute|nom f.|motorway, highway
+chanter|verbe|to sing
+chanteur|nom m.|singer
+chevalier|nom m.|knight
+commander|verbe|to order; to command
+communiquer|verbe|to communicate
+# Cuisine et voyage
+pâte|nom f.|dough, pastry, batter = pâte à crêpes; paste; pasta (pl.) = les pâtes
+poêle|nom f.|frying pan = à la poêle; stove (nom m.)
+dorer|verbe|to brown (cooking) = faire dorer les oignons; to gild; se dorer au soleil = to sunbathe
+tarte|nom f.|tart, pie = tarte aux pommes; corny, naff (adj., informal)
+assiette|nom f.|plate = une assiette de pâtes
+gâteau|nom m.|cake = gâteau au chocolat
+dessert|nom m.|dessert, pudding = en dessert
+entrée|nom f.|starter = entrée, plat, dessert; entrance = l'entrée du musée; admission = entrée gratuite
+moelleux|adj.|soft, moist = un gâteau moelleux; mellow, smooth (wine)
+croustillant|adj.|crispy, crunchy; juicy, spicy (story)
+fondant|adj.|melting = au cœur fondant; tender
+légume|nom m.|vegetable = soupe de légumes
+fourchette|nom f.|fork; range, bracket = une fourchette de prix
+goûter|verbe|to taste, to try = goûter un plat; afternoon snack (nom m.)
+chaleureux|adj.|warm, friendly = un accueil chaleureux
+remporter|verbe|to win = remporter le prix, remporter les élections; to take back
+auberge|nom f.|inn = auberge de campagne; hostel = auberge de jeunesse
+dépaysement|nom m.|change of scenery; feeling of being in a foreign place
+gîte|nom m.|holiday cottage = gîte rural; shelter, lodging
+moule|nom m./f.|mussel (f.) = moules-frites; mould, tin (m.) = moule à gâteau
+conséquence|nom f.|consequence = les conséquences de; en conséquence = accordingly

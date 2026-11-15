@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr" data-size="m">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lecture en français</title>
+<meta name="description" content="Actualités, culture et art de vivre en français, avec un dictionnaire anglais.">
+<meta name="theme-color" id="themeColor" content="#E7EAEF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Français">
+<link rel="icon" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<script>
+  /* Teema asetetaan ennen piirtoa, jotta sivu ei välähdä väärän värisenä. */
+  (function () {
+    var t = "auto";
+    try { t = JSON.parse(localStorage.getItem("fr.theme")) || "auto"; } catch (e) {}
+    var dark = t === "dark" || (t === "auto" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    document.documentElement.dataset.theme = t;
+    document.documentElement.dataset.scheme = dark ? "dark" : "light";
+  })();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wall" aria-hidden="true"></div>
+<div class="edge top" aria-hidden="true"></div>
+<div class="edge bottom" aria-hidden="true"></div>
+
+<div class="topbar">
+  <div class="compact glass" id="compact" aria-hidden="true"></div>
+  <button class="round glass" id="menuBtn" type="button" aria-label="Réglages, sources et outils" aria-expanded="false" aria-controls="menu">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>
+  </button>
+</div>
+
+<main class="wrap">
+  <header class="hero">
+    <p class="today" id="today"></p>
+    <h1 id="title">Aujourd'hui</h1>
+    <p class="status" id="status" aria-live="polite">Chargement des articles…</p>
+  </header>
+  <div id="view"></div>
+</main>
+
+<nav class="tabbar glass" id="tabbar" aria-label="Rubriques">
+  <span class="lens" id="lens" aria-hidden="true"></span>
+</nav>
+
+<!-- Sanan selitys -->
+<section class="sheet glass word-sheet" id="wordSheet" role="dialog" aria-label="Dictionnaire" aria-hidden="true"></section>
+
+<!-- Valikko -->
+<section class="sheet glass menu-sheet" id="menu" role="dialog" aria-label="Réglages" aria-hidden="true">
+  <div class="group">
+    <label class="row"><span>Masquer les articles lus</span><input class="switch" type="checkbox" role="switch" id="hideRead"></label>
+    <div class="row"><span>Apparence</span>
+      <div class="seg" id="themes" role="group" aria-label="Apparence">
+        <button type="button" data-theme="auto">Auto</button>
+        <button type="button" data-theme="light">Clair</button>
+        <button type="button" data-theme="dark">Sombre</button>
+      </div>
+    </div>
+    <div class="row"><span>Taille du texte</span>
+      <div class="seg" id="sizes" role="group" aria-label="Taille du texte">
+        <button type="button" data-size="s" aria-label="Petite">A</button>
+        <button type="button" data-size="m" aria-label="Moyenne">A</button>
+        <button type="button" data-size="l" aria-label="Grande">A</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="group">
+    <button class="rowbtn" type="button" id="pasteBtn">Lire mon texte avec le dictionnaire
+      <svg class="chev" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l6 6-6 6"/></svg></button>
+  </div>
+
+  <div class="group">
+    <h3 id="srcHead">Sources</h3>
+    <div id="srcList"></div>
+  </div>
+
+  <div class="group" id="redditGroup">
+    <h3>Reddit</h3>
+    <div id="redditList"></div>
+    <p class="howto">Reddit a fermé ses flux RSS le 13 novembre 2026 : les messages ne peuvent plus s'afficher ici. Ces raccourcis ouvrent Reddit.</p>
+  </div>
+
+  <p class="fine">
+    Les titres et les chapôs viennent des sources. Dictionnaire : Wiktionary anglais (CC BY-SA), avec des corrections.
+    Formes et genres : Lexique Dicollecte (MPL 2.0). Fréquences : wordfreq. Traduction automatique : OPUS-MT (Université d'Helsinki) et MyMemory.
+  </p>
+</section>
+
+<!-- Kertaus -->
+<section class="overlay" id="review" aria-label="Réviser les mots"></section>
+
+<div class="toast glass" id="toast" role="status" aria-live="polite"></div>
+
+<script src="ordbok.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
