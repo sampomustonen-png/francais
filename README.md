@@ -39,7 +39,11 @@ Tähden napautus (*Enregistrer*) tallentaa sanan virkkeineen. Jos sana kuului il
 
 ### Koko juttu sanakirjan kanssa
 
-*Lire l’article* avaa jutun sovelluksen omaan lukunäkymään, jossa jokainen sana on napautettavissa. Teksti haetaan lukupalvelun (Jina Reader) kautta vasta, kun avaat jutun. Jos haku ei onnistu (esim. maksumuuri), näet tiivistelmän ja napin, joka avaa jutun alkuperäisellä sivulla.
+*Lire l’article* avaa jutun sovelluksen omaan lukunäkymään, jossa jokainen sana on napautettavissa. Teksti haetaan lukupalvelun (Jina Reader) kautta vasta, kun avaat jutun. Jos haku ei onnistu, näet tiivistelmän ja napin, joka avaa jutun alkuperäisellä sivulla.
+
+### Juttuja vain tilaajille
+
+Arvostetuista lehdistä (Le Monde, Télérama, Le Figaro, Courrier international) osa jutuista on vain tilaajille. Päivitysajo tunnistaa ne sivun rakenteisesta datasta (schema.org `isAccessibleForFree`), jota lehdet julkaisevat hakukoneita varten. Tällaisessa kortissa on lukko. Lukunäkymä näyttää otsikon ja ingressin sanakirjan kanssa sekä napin, joka avaa jutun lehden sivulla; koko tekstiä ei yritetä hakea. Valikon *Sources*-kohdassa voit piilottaa lukitut jutut kokonaan (*Articles pour abonnés*). Päivän valikoimaan (*Lecture du jour*) valitaan ensisijaisesti ilmaisia juttuja.
 
 Valikon *Lire mon texte avec le dictionnaire* -kohtaan voi liittää minkä tahansa ranskankielisen tekstin.
 
@@ -61,7 +65,7 @@ Repossa valitse **Add file → Create new file**, kirjoita nimeksi `.github/work
 
 | Vaihe | Tiedosto |
 |---|---|
-| Hakee syötteet, kuvat ja vaikeustasot, kirjoittaa `feed.json` ja `ordbok.json` | `scripts/build_feed.py` |
+| Hakee syötteet, kuvat, maksumuuritiedot ja vaikeustasot, kirjoittaa `feed.json` ja `ordbok.json` | `scripts/build_feed.py` |
 | Listaa sanat, joita sanakirjassa ei ole | `scripts/saknade_ord.js` |
 | Kääntää virkkeet ja puuttuvat sanat valmiiksi OPUS-MT-mallilla (ranska → englanti) | `scripts/oversatt.py` |
 | Julkaisee sivun | `.github/workflows/mettre-a-jour.yml` |
@@ -80,8 +84,13 @@ Jos käännösvaihe epäonnistuu, sivu julkaistaan silti. Silloin virkkeet kää
 | Cuisine Actuelle | Art de vivre → Cuisine | syöte toimii, mutta päivittyy harvoin, joten reseptejä näytetään vuoden ajalta |
 | franceinfo (Monde, France, Culture) | | ei tarkistettu |
 | RFI ja RFI Culture | | ei tarkistettu |
+| The Conversation | France (tutkijoiden selittäviä juttuja, ilmainen, CC BY-ND) | tarkistettu |
+| Le Monde (International, Culture, Le Monde des livres) | Monde, Culture → Livres | ei tarkistettu, osa vain tilaajille |
+| Courrier international | Monde | ei tarkistettu, osa vain tilaajille |
+| Télérama | Culture | ei tarkistettu, osa vain tilaajille |
+| Le Figaro, Culture | Culture | ei tarkistettu, osa vain tilaajille |
 
-Tarkistamattomat syötteet eivät auenneet testiympäristössä. Valikon kohdassa *Sources* näkyy jokaisen lähteen tila: jos siinä lukee *ne fonctionne pas*, syötteen osoite on muuttunut. Voit poistaa sen tiedostosta `sources.json` tai lisätä kenttään `"enabled": false`.
+Tarkistamattomat syötteet eivät auenneet testiympäristössä (suurten lehtien sivustot on estetty siellä). Valikon kohdassa *Sources* näkyy jokaisen lähteen tila: jos siinä lukee *ne fonctionne pas*, syötteen osoite on muuttunut. Voit poistaa sen tiedostosta `sources.json` tai lisätä kenttään `"enabled": false`.
 
 ### Lähteiden muokkaus
 
